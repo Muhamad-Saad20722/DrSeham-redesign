@@ -362,6 +362,49 @@ a {
   line-height: 1
 }
 
+/* Segmented language toggle (AR | EN) */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: .15rem;
+  margin-inline-start: auto;
+  padding: .2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(26, 106, 85, .18);
+  background: #fff;
+  box-shadow: 0 10px 22px -18px rgba(18, 73, 60, .7);
+}
+
+.lang-toggle a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.2rem;
+  padding: .42rem .8rem;
+  border-radius: 999px;
+  color: var(--clinic-green-800);
+  font-size: .8rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease
+}
+
+.lang-toggle a:hover {
+  color: var(--clinic-green-700)
+}
+
+.lang-toggle a.active {
+  background: var(--clinic-green-700);
+  color: #fff;
+  box-shadow: 0 10px 20px -14px rgba(26, 106, 85, .9)
+}
+
+.lang-toggle a:focus-visible {
+  outline: 2px solid var(--clinic-green-700);
+  outline-offset: 2px
+}
+
 .navbar-toggler {
   border: 0;
   box-shadow: none !important;
