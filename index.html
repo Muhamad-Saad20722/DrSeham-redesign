@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<!-- تجربة001-->
+
 <head>
   <meta charset="utf-8">
+  <script
+    id="lang-redirect">try { if (localStorage.getItem('clinic-lang') === 'en' && !/[?&]lang=ar/.test(location.search)) { location.replace('en/' + (location.pathname.split('/').pop() || 'index.html') + location.search + location.hash) } } catch (e) { }</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>د. سهام سالم | استشارية أمراض الصدر والحساسية والدرن - مدينة نصر</title>
   <meta name="description"
     content="عيادة د. سهام سالم لأمراض الصدر والحساسية والدرن (السل) بمدينة نصر. أكثر من ٢٠ عامًا خبرة، كشف بالعيادة وزيارات منزلية واستشارات عن بُعد. احجز موعدك الآن.">
   <meta name="theme-color" content="#0d3a30">
   <meta name="author" content="SoftwareSolutions">
+  <link rel="alternate" hreflang="ar" href="index.html">
+  <link rel="alternate" hreflang="en" href="en/index.html">
   <!-- Laravel: inject the CSRF token here, e.g. content="{{ csrf_token() }}" -->
   <meta name="csrf-token" content="">
   <meta property="og:title" content="د. سهام سالم | استشارية أمراض الصدر والحساسية والدرن - مدينة نصر">
@@ -41,6 +45,8 @@
       <div class="container">
         <a class="navbar-brand" href="index.html" aria-label="د. سهام سالم - عيادة الصدر"><img
             src="assets/img/logo.webp" alt="شعار عيادة د. سهام سالم للصدر" width="78" height="52"></a>
+        <a class="lang-switch order-lg-3" href="en/index.html" hreflang="en" lang="en" data-lang-switch="en"
+          aria-label="Switch to English"><i class="bi bi-translate"></i><span>EN</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
           aria-expanded="false" aria-label="فتح القائمة"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="nav">
@@ -327,8 +333,9 @@
                         <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i></div>
-                        <p>دكتوره كويسه ومريحه وسكر جداااا وشطوره اوي ربنا يحفظها يارب</p>
-                        <div class="who"><span class="avatar" aria-hidden="true">ا</span>ايه ي.</div>
+                        <p lang="ar" dir="rtl">دكتوره كويسه ومريحه وسكر جداااا وشطوره اوي ربنا يحفظها يارب</p>
+                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">ا</span><span lang="ar"
+                            dir="rtl">ايه ي.</span></div>
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -336,30 +343,9 @@
                         <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i></div>
-                        <p>من افضل دكاتره ما شاء الله</p>
-                        <div class="who"><span class="avatar" aria-hidden="true">ع</span>عاطف م.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <div class="card-soft review-card">
-                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i></div>
-                        <p>دكتورة فوق ممتازة ربنا يباركلها</p>
-                        <div class="who"><span class="avatar" aria-hidden="true">ف</span>فهد ا.</div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-soft review-card">
-                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i></div>
-                        <p>دكتوره ممتازه جدا وبتراعى ربنا في شغلها...</p>
-                        <div class="who"><span class="avatar" aria-hidden="true">خ</span>خالد ع.</div>
+                        <p lang="ar" dir="rtl">من افضل دكاتره ما شاء الله</p>
+                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">ع</span><span lang="ar"
+                            dir="rtl">عاطف م.</span></div>
                       </div>
                     </div>
                   </div>
@@ -371,8 +357,9 @@
                         <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i></div>
-                        <p>ما شاء الله دكتورة سهام ممتازة و مستمعة جيدة</p>
-                        <div class="who"><span class="avatar" aria-hidden="true">م</span>مريم ا.</div>
+                        <p lang="ar" dir="rtl">دكتورة فوق ممتازة ربنا يباركلها</p>
+                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">ف</span><span lang="ar"
+                            dir="rtl">فهد ا.</span></div>
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -380,8 +367,9 @@
                         <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i></div>
-                        <p>دكتورة مهذبة وعندها حسن إستماع</p>
-                        <div class="who"><span class="avatar" aria-hidden="true">م</span>محمد أ.</div>
+                        <p lang="ar" dir="rtl">دكتوره ممتازه جدا وبتراعى ربنا في شغلها...</p>
+                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">خ</span><span lang="ar"
+                            dir="rtl">خالد ع.</span></div>
                       </div>
                     </div>
                   </div>
@@ -393,8 +381,9 @@
                         <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i></div>
-                        <p>دكتورة مستمعة جيدة وشاطرة ما شاء الله</p>
-                        <div class="who"><span class="avatar" aria-hidden="true">ن</span>نورا ف.</div>
+                        <p lang="ar" dir="rtl">ما شاء الله دكتورة سهام ممتازة و مستمعة جيدة</p>
+                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">م</span><span lang="ar"
+                            dir="rtl">مريم ا.</span></div>
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -402,8 +391,33 @@
                         <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i></div>
-                        <p>ماشاء الله كانت متواضعة جدا وتعاملها رائع...</p>
-                        <div class="who"><span class="avatar" aria-hidden="true">ص</span>صفية ج.</div>
+                        <p lang="ar" dir="rtl">دكتورة مهذبة وعندها حسن إستماع</p>
+                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">م</span><span lang="ar"
+                            dir="rtl">محمد أ.</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="card-soft review-card">
+                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i></div>
+                        <p lang="ar" dir="rtl">دكتورة مستمعة جيدة وشاطرة ما شاء الله</p>
+                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">ن</span><span lang="ar"
+                            dir="rtl">نورا ف.</span></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-soft review-card">
+                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i></div>
+                        <p lang="ar" dir="rtl">ماشاء الله كانت متواضعة جدا وتعاملها رائع...</p>
+                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">ص</span><span lang="ar"
+                            dir="rtl">صفية ج.</span></div>
                       </div>
                     </div>
                   </div>

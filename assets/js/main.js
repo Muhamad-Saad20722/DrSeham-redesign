@@ -26,6 +26,13 @@
     modal.addEventListener('hidden.bs.modal', function () { frame.src = ''; });
   }
 
+  // Remember the visitor's language choice (the AR pages redirect to /en/ when 'en' was chosen)
+  document.querySelectorAll('[data-lang-switch]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      try { localStorage.setItem('clinic-lang', a.getAttribute('data-lang-switch')); } catch (e) {}
+    });
+  });
+
   // Copy the CSRF token (injected by the server into the meta tag) into any form
   var meta = document.querySelector('meta[name="csrf-token"]');
   if (meta && meta.content) {

@@ -10,6 +10,16 @@
   var successDiv = document.getElementById('successDiv');
   var errorDiv = document.getElementById('errorDiv');
   var submitBtn = document.getElementById('send_message');
+  var EN = document.documentElement.lang === 'en';
+  var M = EN ? {
+    pick: 'Choose a date to see available times.', loading: 'Loading available times...', none: 'No available times on this day.',
+    fail: 'Could not load times, please try again.', chooseSlot: 'Please choose an available time.', ok: 'Appointment booked successfully',
+    err: 'An error occurred while submitting the booking.', errNet: 'An error occurred while submitting. Please try again or contact us on WhatsApp.'
+  } : {
+    pick: 'اختر التاريخ لعرض الأوقات المتاحة.', loading: 'جاري تحميل الأوقات المتاحة...', none: 'لا توجد أوقات متاحة في هذا اليوم.',
+    fail: 'تعذر تحميل الأوقات، حاول مرة أخرى.', chooseSlot: 'من فضلك اختر وقتًا متاحًا للحجز.', ok: 'تم حجز الموعد بنجاح',
+    err: 'حدث خطأ أثناء إرسال الحجز.', errNet: 'حدث خطأ أثناء إرسال الحجز، حاول مرة أخرى أو تواصل معنا عبر واتساب.'
+  };
   var csrf = (document.querySelector('meta[name="csrf-token"]') || {}).content || '';
 
   // Minimum date = today (local time)
@@ -41,8 +51,8 @@
     document.getElementById('timeSlot').value = '';
     document.getElementById('toTime').value = '';
     var doctor = document.getElementById('doctor_id').value, date = dateInput.value, b = branch();
-    if (!doctor || !date || !b) { setSlotsMessage('اختر التاريخ لعرض الأوقات المتاحة.'); return; }
-    setSlotsMessage('جاري تحميل الأوقات المتاحة...');
+    if (!doctor || !date || !b) { setSlotsMessage(M.pick); return; }
+    setSlotsMessage(M.loading);
     var url = API + '/doctor-session-time?adminAppointmentDoctorId=' + encodeURIComponent(doctor) +
       '&date=' + encodeURIComponent(date) + '&branch_id=' + encodeURIComponent(b) +
       '&timezone_offset_minutes=' + new Date().getTimezoneOffset();
@@ -60,10 +70,10 @@
             slotData.appendChild(s);
           });
         } else {
-          setSlotsMessage('لا توجد أوقات متاحة في هذا اليوم.');
+          setSlotsMessage(M.none);
         }
       })
-      .catch(function () { setSlotsMessage('تعذر تحميل الأوقات، حاول مرة أخرى.', 'text-danger'); });
+      .catch(function () { setSlotsMessage(M.fail, 'text-danger'); });
   }
 
   dateInput.addEventListener('change', fetchSlots);
@@ -73,7 +83,7 @@
     e.preventDefault();
     hide(successDiv); hide(errorDiv);
     if (!form.checkValidity()) { form.reportValidity(); return; }
-    if (!document.getElementById('timeSlot').value) { msg(errorDiv, 'من فضلك اختر وقتًا متاحًا للحجز.'); return; }
+    if (!document.getElementById('timeSlot').value) { msg(errorDiv, M.chooseSlot); return; }
     submitBtn.disabled = true;
     fetch(form.getAttribute('action') ? API + form.getAttribute('action') : '', {
       method: 'POST',
@@ -83,12 +93,12 @@
       .then(function (r) { return r.json(); })
       .then(function (res) {
         if (res.success) {
-          msg(successDiv, res.message || 'تم حجز الموعد بنجاح');
-          form.reset(); setSlotsMessage('اختر التاريخ لعرض الأوقات المتاحة.');
+          msg(successDiv, res.message || M.ok);
+          form.reset(); setSlotsMessage(M.pick);
           successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else { msg(errorDiv, res.message || 'حدث خطأ أثناء إرسال الحجز.'); }
+        } else { msg(errorDiv, res.message || M.err); }
       })
-      .catch(function () { msg(errorDiv, 'حدث خطأ أثناء إرسال الحجز، حاول مرة أخرى أو تواصل معنا عبر واتساب.'); })
+      .catch(function () { msg(errorDiv, M.errNet); })
       .then(function () { submitBtn.disabled = false; });
   });
 })();
