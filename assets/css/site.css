@@ -326,6 +326,42 @@ a {
   background: var(--clinic-green-100)
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  margin-inline-start: auto;
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(26, 106, 85, .18);
+  background: linear-gradient(180deg, #fff, var(--clinic-green-50));
+  color: var(--clinic-green-800);
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  box-shadow: 0 8px 18px -14px rgba(13, 58, 48, .8);
+  transition: transform .15s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease
+}
+
+.lang-switch:hover,
+.lang-switch:focus-visible {
+  background: var(--clinic-green-700);
+  border-color: var(--clinic-green-700);
+  color: #fff;
+  box-shadow: 0 14px 28px -18px rgba(26, 106, 85, .9);
+  transform: translateY(-1px)
+}
+
+.lang-switch i {
+  font-size: .95rem
+}
+
+.lang-switch span {
+  line-height: 1
+}
+
 .navbar-toggler {
   border: 0;
   box-shadow: none !important;

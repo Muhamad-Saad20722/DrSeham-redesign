@@ -1,621 +1,827 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
-<head>
-  <meta charset="utf-8">
-  <script
-    id="lang-redirect">try { if (localStorage.getItem('clinic-lang') === 'en' && !/[?&]lang=ar/.test(location.search)) { location.replace('en/' + (location.pathname.split('/').pop() || 'index.html') + location.search + location.hash) } } catch (e) { }</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>د. سهام سالم | استشارية أمراض الصدر والحساسية والدرن - مدينة نصر</title>
-  <meta name="description"
-    content="عيادة د. سهام سالم لأمراض الصدر والحساسية والدرن (السل) بمدينة نصر. أكثر من ٢٠ عامًا خبرة، كشف بالعيادة وزيارات منزلية واستشارات عن بُعد. احجز موعدك الآن.">
-  <meta name="theme-color" content="#0d3a30">
-  <meta name="author" content="SoftwareSolutions">
-  <link rel="alternate" hreflang="ar" href="index.html">
-  <link rel="alternate" hreflang="en" href="en/index.html">
-  <!-- Laravel: inject the CSRF token here, e.g. content="{{ csrf_token() }}" -->
-  <meta name="csrf-token" content="">
-  <meta property="og:title" content="د. سهام سالم | استشارية أمراض الصدر والحساسية والدرن - مدينة نصر">
-  <meta property="og:description"
-    content="عيادة د. سهام سالم لأمراض الصدر والحساسية والدرن (السل) بمدينة نصر. أكثر من ٢٠ عامًا خبرة، كشف بالعيادة وزيارات منزلية واستشارات عن بُعد. احجز موعدك الآن.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/doctor.webp">
-  <link rel="icon" href="assets/img/favicon.png">
-  <link rel="apple-touch-icon" href="assets/img/favicon.png">
-  <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="assets/css/site.css">
-  <script
-    type="application/ld+json">{"@context": "https://schema.org", "@type": "Physician", "name": "د. سهام سالم", "medicalSpecialty": "Pulmonary", "description": "استشارية أمراض الصدر والحساسية والدرن (السل)", "telephone": "+201113144573", "address": {"@type": "PostalAddress", "addressLocality": "مدينة نصر", "addressCountry": "EG", "streetAddress": "شارع عباس العقاد، المنطقة الأولى، مدينة نصر"}, "sameAs": ["https://www.facebook.com/profile.php?id=61566491782382", "https://www.instagram.com/dr_seham_chest", "https://www.tiktok.com/@dr.seham.chest", "https://www.youtube.com/@drsehammostafasalemchestclinic"], "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.98", "reviewCount": "722"}}</script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <script
+      id="lang-redirect">try { if (localStorage.getItem('clinic-lang') === 'en' && !/[?&]lang=ar/.test(location.search)) { location.replace('en/' + (location.pathname.split('/').pop() || 'index.html') + location.search + location.hash) } } catch (e) { }</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>د. سهام سالم | استشارية أمراض الصدر والحساسية والدرن - مدينة
+      نصر</title>
+    <meta name="description"
+      content="عيادة د. سهام سالم لأمراض الصدر والحساسية والدرن (السل) بمدينة نصر. أكثر من ٢٠ عامًا خبرة، كشف بالعيادة وزيارات منزلية واستشارات عن بُعد. احجز موعدك الآن.">
+    <meta name="theme-color" content="#0d3a30">
+    <meta name="author" content="SoftwareSolutions">
+    <link rel="alternate" hreflang="ar" href="index.html">
+    <link rel="alternate" hreflang="en" href="en/index.html">
+    <!-- Laravel: inject the CSRF token here, e.g. content="{{ csrf_token() }}" -->
+    <meta name="csrf-token" content>
+    <meta property="og:title"
+      content="د. سهام سالم | استشارية أمراض الصدر والحساسية والدرن - مدينة نصر">
+    <meta property="og:description"
+      content="عيادة د. سهام سالم لأمراض الصدر والحساسية والدرن (السل) بمدينة نصر. أكثر من ٢٠ عامًا خبرة، كشف بالعيادة وزيارات منزلية واستشارات عن بُعد. احجز موعدك الآن.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/doctor.webp">
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script
+      type="application/ld+json">{"@context": "https://schema.org", "@type": "Physician", "name": "د. سهام سالم", "medicalSpecialty": "Pulmonary", "description": "استشارية أمراض الصدر والحساسية والدرن (السل)", "telephone": "+201113144573", "address": {"@type": "PostalAddress", "addressLocality": "مدينة نصر", "addressCountry": "EG", "streetAddress": "شارع عباس العقاد، المنطقة الأولى، مدينة نصر"}, "sameAs": ["https://www.facebook.com/profile.php?id=61566491782382", "https://www.instagram.com/dr_seham_chest", "https://www.tiktok.com/@dr.seham.chest", "https://www.youtube.com/@drsehammostafasalemchestclinic"], "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.98", "reviewCount": "722"}}</script>
+  </head>
 
-<body>
-  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
-  <div class="topbar d-none d-lg-block">
-    <div class="container d-flex justify-content-between align-items-center py-2">
-      <span><i class="bi bi-geo-alt"></i>شارع عباس العقاد، المنطقة الأولى، مدينة نصر</span>
-      <span class="d-flex gap-4">
-        <a href="tel:+201113144573"><i class="bi bi-telephone"></i><span class="ltr">01113144573</span></a>
-        <a href="https://wa.me/201113144573" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>واتساب</a>
-      </span>
+  <body>
+    <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+    <div class="topbar d-none d-lg-block">
+      <div
+        class="container d-flex justify-content-between align-items-center py-2">
+        <span><i class="bi bi-geo-alt"></i>شارع عباس العقاد، المنطقة الأولى،
+          مدينة نصر</span>
+        <span class="d-flex gap-4">
+          <a href="tel:+201113144573"><i class="bi bi-telephone"></i><span
+              class="ltr">01113144573</span></a>
+          <a href="https://wa.me/201113144573" target="_blank" rel="noopener"><i
+              class="bi bi-whatsapp"></i>واتساب</a>
+        </span>
+      </div>
     </div>
-  </div>
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg site-nav" aria-label="القائمة الرئيسية">
-      <div class="container">
-        <a class="navbar-brand" href="index.html" aria-label="د. سهام سالم - عيادة الصدر"><img
-            src="assets/img/logo.webp" alt="شعار عيادة د. سهام سالم للصدر" width="78" height="52"></a>
-        <a class="lang-switch order-lg-3" href="en/index.html" hreflang="en" lang="en" data-lang-switch="en"
-          aria-label="Switch to English"><i class="bi bi-translate"></i><span>EN</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
-          aria-expanded="false" aria-label="فتح القائمة"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-1">
-            <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">الرئيسية</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">الخدمات</a></li>
-            <li class="nav-item"><a class="nav-link" href="testimonials.html">آراء المرضى</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
-          </ul>
-          <a class="btn btn-primary" href="appointment.html"><i class="bi bi-calendar-check me-1"></i> احجز موعدك</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main id="main">
-
-    <section class="hero">
-      <div class="container">
-        <div class="row align-items-center gy-5 gx-lg-5">
-          <div class="col-lg-7 pb-lg-5">
-            <span class="hero-badge mb-3"><i class="bi bi-patch-check-fill"></i> استشارية أمراض الصدر والحساسية والدرن
-              (السل)</span>
-            <h1 class="mb-3">تنفّس براحة مع <span class="accent">د. سهام سالم</span></h1>
-            <p class="lead mb-4">أكثر من ٢٠ عامًا من الخبرة في تشخيص وعلاج أمراض الصدر والدرن (السل)، بما في ذلك وحدات
-              العناية المركزة — في عيادة هادئة تهتم بكل مريض.</p>
-            <div class="d-flex flex-wrap gap-3">
-              <a class="btn btn-amber btn-lg" href="appointment.html"><i class="bi bi-calendar-check me-1"></i> احجز
-                موعدك</a>
-              <a class="btn btn-outline-light-2 btn-lg" href="https://wa.me/201113144573" target="_blank"
-                rel="noopener"><i class="bi bi-whatsapp me-1"></i> تحدث معنا عبر واتساب</a>
-            </div>
-            <div class="d-flex flex-wrap gap-4 mt-4 pt-2 text-white-50">
-              <span><i class="bi bi-hospital text-amber me-1"></i> نقبل التأمين الطبي</span>
-              <span><i class="bi bi-house-heart text-amber me-1"></i> زيارات منزلية</span>
-              <span><i class="bi bi-camera-video text-amber me-1"></i> استشارات عن بُعد</span>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="hero-figure">
-              <img src="assets/img/doctor.webp" alt="د. سهام سالم، استشارية أمراض الصدر" width="700" height="765"
-                fetchpriority="high">
-              <div class="float-card fc-1"><span class="ico"><i class="bi bi-star-fill"></i></span>
-                <div><strong class="ltr">4.98 / 5</strong><small>٧٢٢+ تقييم من المرضى</small></div>
-              </div>
-              <div class="float-card fc-2"><span class="ico"><i class="bi bi-people-fill"></i></span>
-                <div><strong>+١٠٬٠٠٠</strong><small>مريض يثقون بها</small></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="stat-strip">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg site-nav"
+        aria-label="القائمة الرئيسية">
         <div class="container">
-          <div class="row g-0">
-            <div class="col-6 col-md-3 stat">
-              <div class="num">+٢٠</div>
-              <div class="lbl">عامًا من الخبرة</div>
-            </div>
-            <div class="col-6 col-md-3 stat">
-              <div class="num">+١٠٬٠٠٠</div>
-              <div class="lbl">مريض يثقون بنا</div>
-            </div>
-            <div class="col-6 col-md-3 stat">
-              <div class="num">٩٨٪</div>
-              <div class="lbl">ملاحظات إيجابية حقيقية</div>
-            </div>
-            <div class="col-6 col-md-3 stat">
-              <div class="num">+٤</div>
-              <div class="lbl">سنوات في العناية المركزة</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container">
-        <div class="row align-items-center gy-5 gx-lg-5">
-          <div class="col-lg-5 reveal">
-            <div class="about-photo">
-              <img class="main" src="assets/img/xray-review.webp" alt="مراجعة أشعة الصدر مع الطبيبة" width="900"
-                height="676" loading="lazy">
-              <div class="tag"><strong>المركز الثاني</strong>على خريجي الزمالة المصرية لأمراض الصدر</div>
-            </div>
-          </div>
-          <div class="col-lg-7 reveal">
-            <span class="eyebrow">عن الدكتورة</span>
-            <h2 class="section-title">د. سهام سالم — استشارية أمراض الصدر والحساسية والدرن (السل)</h2>
-            <p class="lead-sm mb-4">حاصلة على ماجستير أمراض الصدر والدرن (السل) من جامعة القاهرة والزمالة المصرية لأمراض
-              الصدر، وعملت في وحدات العناية المركزة وعدد من أكبر مستشفيات الصدر.</p>
-            <ul class="cred-list">
-              <li><i class="bi bi-check2-circle"></i><span>أكثر من ٢٠ عامًا خبرة في أمراض الصدر والدرن (السل)</span>
-              </li>
-              <li><i class="bi bi-check2-circle"></i><span>مستشفيات صدر العباسية، ومستشفى التأمين الصحي بمدينة نصر،
-                  ومستشفى النصر التخصصي (رابعة العدوية سابقًا)</span></li>
-              <li><i class="bi bi-check2-circle"></i><span>أكثر من ٤ سنوات خبرة في وحدة العناية المركزة</span></li>
-              <li><i class="bi bi-check2-circle"></i><span>ماجستير أمراض الصدر والدرن (السل) — القصر العيني، جامعة
-                  القاهرة</span></li>
-              <li><i class="bi bi-check2-circle"></i><span>الزمالة المصرية لأمراض الصدر</span></li>
+          <a class="navbar-brand" href="index.html"
+            aria-label="د. سهام سالم - عيادة الصدر"><img
+              src="assets/img/logo.webp" alt="شعار عيادة د. سهام سالم للصدر"
+              width="78" height="52"></a>
+          <a class="lang-switch order-lg-3" href="en/index.html" hreflang="en"
+            lang="en" data-lang-switch="en"
+            aria-label="Switch to English"><i
+              class="bi bi-translate"></i><span>EN</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#nav" aria-controls="nav"
+            aria-expanded="false" aria-label="فتح القائمة"><span
+              class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-1">
+              <li class="nav-item"><a class="nav-link active" href="index.html"
+                  aria-current="page">الرئيسية</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="services.html">الخدمات</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="testimonials.html">آراء المرضى</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">اتصل
+                  بنا</a></li>
             </ul>
-            <div class="d-flex flex-wrap gap-2 mt-4">
-              <a class="btn btn-primary" href="appointment.html">احجز كشف</a>
-              <a class="btn btn-outline-primary" href="testimonials.html">آراء المرضى</a>
+            <a class="btn btn-primary" href="appointment.html"><i
+                class="bi bi-calendar-check me-1"></i> احجز موعدك</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+
+      <section class="hero">
+        <div class="container">
+          <div class="row align-items-center gy-5 gx-lg-5">
+            <div class="col-lg-7 pb-lg-5">
+              <span class="hero-badge mb-3"><i
+                  class="bi bi-patch-check-fill"></i> استشارية أمراض الصدر
+                والحساسية والدرن
+                (السل)</span>
+              <h1 class="mb-3">تنفّس براحة مع <span class="accent">د. سهام
+                  سالم</span></h1>
+              <p class="lead mb-4">أكثر من ٢٠ عامًا من الخبرة في تشخيص وعلاج
+                أمراض الصدر والدرن (السل)، بما في ذلك وحدات
+                العناية المركزة — في عيادة هادئة تهتم بكل مريض.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-amber btn-lg" href="appointment.html"><i
+                    class="bi bi-calendar-check me-1"></i> احجز
+                  موعدك</a>
+                <a class="btn btn-outline-light-2 btn-lg"
+                  href="https://wa.me/201113144573" target="_blank"
+                  rel="noopener"><i class="bi bi-whatsapp me-1"></i> تحدث معنا
+                  عبر واتساب</a>
+              </div>
+              <div class="d-flex flex-wrap gap-4 mt-4 pt-2 text-white-50">
+                <span><i class="bi bi-hospital text-amber me-1"></i> نقبل
+                  التأمين الطبي</span>
+                <span><i class="bi bi-house-heart text-amber me-1"></i> زيارات
+                  منزلية</span>
+                <span><i class="bi bi-camera-video text-amber me-1"></i>
+                  استشارات عن بُعد</span>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="hero-figure">
+                <img src="assets/img/doctor.webp"
+                  alt="د. سهام سالم، استشارية أمراض الصدر" width="700"
+                  height="765"
+                  fetchpriority="high">
+                <div class="float-card fc-1"><span class="ico"><i
+                      class="bi bi-star-fill"></i></span>
+                  <div><strong class="ltr">4.98 / 5</strong><small>٧٢٢+ تقييم من
+                      المرضى</small></div>
+                </div>
+                <div class="float-card fc-2"><span class="ico"><i
+                      class="bi bi-people-fill"></i></span>
+                  <div><strong>+١٠٬٠٠٠</strong><small>مريض يثقون
+                      بها</small></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section bg-green-50" id="services">
-      <div class="container">
-        <div class="row align-items-end g-3 mb-5">
-          <div class="col-md-8 reveal">
-            <span class="eyebrow">خدمات العيادة</span>
-            <h2 class="section-title mb-0">خدمات عيادة الصدر المتميزة</h2>
+        <div class="stat-strip">
+          <div class="container">
+            <div class="row g-0">
+              <div class="col-6 col-md-3 stat">
+                <div class="num">+٢٠</div>
+                <div class="lbl">عامًا من الخبرة</div>
+              </div>
+              <div class="col-6 col-md-3 stat">
+                <div class="num">+١٠٬٠٠٠</div>
+                <div class="lbl">مريض يثقون بنا</div>
+              </div>
+              <div class="col-6 col-md-3 stat">
+                <div class="num">٩٨٪</div>
+                <div class="lbl">ملاحظات إيجابية حقيقية</div>
+              </div>
+              <div class="col-6 col-md-3 stat">
+                <div class="num">+٤</div>
+                <div class="lbl">سنوات في العناية المركزة</div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 text-md-start reveal"><a class="btn btn-outline-primary" href="services.html">جميع
-              الخدمات <i class="bi bi-arrow-left ms-1"></i></a></div>
         </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="row align-items-center gy-5 gx-lg-5">
+            <div class="col-lg-5 reveal">
+              <div class="about-photo">
+                <img class="main" src="assets/img/xray-review.webp"
+                  alt="مراجعة أشعة الصدر مع الطبيبة" width="900"
+                  height="676" loading="lazy">
+                <div class="tag"><strong>المركز الثاني</strong>على خريجي الزمالة
+                  المصرية لأمراض الصدر</div>
+              </div>
+            </div>
+            <div class="col-lg-7 reveal">
+              <span class="eyebrow">عن الدكتورة</span>
+              <h2 class="section-title">د. سهام سالم — استشارية أمراض الصدر
+                والحساسية والدرن (السل)</h2>
+              <p class="lead-sm mb-4">حاصلة على ماجستير أمراض الصدر والدرن
+                (السل) من جامعة القاهرة والزمالة المصرية لأمراض
+                الصدر، وعملت في وحدات العناية المركزة وعدد من أكبر مستشفيات
+                الصدر.</p>
+              <ul class="cred-list">
+                <li><i class="bi bi-check2-circle"></i><span>أكثر من ٢٠ عامًا
+                    خبرة في أمراض الصدر والدرن (السل)</span>
+                </li>
+                <li><i class="bi bi-check2-circle"></i><span>مستشفيات صدر
+                    العباسية، ومستشفى التأمين الصحي بمدينة نصر،
+                    ومستشفى النصر التخصصي (رابعة العدوية سابقًا)</span></li>
+                <li><i class="bi bi-check2-circle"></i><span>أكثر من ٤ سنوات
+                    خبرة في وحدة العناية المركزة</span></li>
+                <li><i class="bi bi-check2-circle"></i><span>ماجستير أمراض الصدر
+                    والدرن (السل) — القصر العيني، جامعة
+                    القاهرة</span></li>
+                <li><i class="bi bi-check2-circle"></i><span>الزمالة المصرية
+                    لأمراض الصدر</span></li>
+              </ul>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn btn-primary" href="appointment.html">احجز كشف</a>
+                <a class="btn btn-outline-primary" href="testimonials.html">آراء
+                  المرضى</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-green-50" id="services">
+        <div class="container">
+          <div class="row align-items-end g-3 mb-5">
+            <div class="col-md-8 reveal">
+              <span class="eyebrow">خدمات العيادة</span>
+              <h2 class="section-title mb-0">خدمات عيادة الصدر المتميزة</h2>
+            </div>
+            <div class="col-md-4 text-md-start reveal"><a
+                class="btn btn-outline-primary" href="services.html">جميع
+                الخدمات <i class="bi bi-arrow-left ms-1"></i></a></div>
+          </div>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="card-soft service-card"><span class="icon-tile"><i
+                    class="bi bi-flower1"></i></span>
+                <h3>استشارة أمراض الحساسية</h3>
+                <p>تقييم وعلاج حالات الحساسية والأمراض التنفسية الموسمية.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="card-soft service-card"><span class="icon-tile"><i
+                    class="bi bi-virus"></i></span>
+                <h3>استشارة الدرن (السل)</h3>
+                <p>تشخيص ومتابعة حالات الدرن (السل) للرئة.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="card-soft service-card"><span class="icon-tile"><i
+                    class="bi bi-clipboard2-pulse"></i></span>
+                <h3>متابعة الأمراض المزمنة للصدر</h3>
+                <p>متابعة الحالات المزمنة مثل الربو والتهاب الشعب الهوائية
+                  المزمن.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="card-soft service-card"><span class="icon-tile"><i
+                    class="bi bi-moon-stars"></i></span>
+                <h3>تشخيص اضطرابات النوم</h3>
+                <p>تقييم حالات انقطاع النفس الانسدادي والنوم لدى البالغين
+                  والسمنة.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="card-soft service-card"><span class="icon-tile"><i
+                    class="bi bi-balloon-heart"></i></span>
+                <h3>استشارات للأطفال من 6 أشهر</h3>
+                <p>رعاية طبية للأطفال بدءًا من عمر 6 أشهر.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="card-soft service-card"><span class="icon-tile"><i
+                    class="bi bi-wind"></i></span>
+                <h3>علاج الربو</h3>
+                <p>خطط علاجية فردية للسيطرة على الربو والوقاية من النوبات.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="row gy-5 gx-lg-5 align-items-center">
+            <div class="col-lg-5 reveal">
+              <span class="eyebrow">لماذا عيادتنا</span>
+              <h2 class="section-title">نحرص على راحتك وصحتك</h2>
+              <p class="lead-sm">خدمات متميزة تلبي احتياجات المرضى مع الحفاظ على
+                راحتهم وخصوصيتهم.</p>
+              <img class="rounded-4 w-100 mt-3 d-none d-lg-block"
+                src="assets/img/clinic-desk.webp"
+                alt="الدكتورة سهام في العيادة" width="200" height="200"
+                loading="lazy"
+                style="max-width:220px;box-shadow:0 20px 40px -24px rgba(13,58,48,.5)">
+              <a class="btn btn-primary mt-4" href="contact.html">تواصل معنا</a>
+            </div>
+            <div class="col-lg-7">
+              <div class="row g-3">
+                <div class="col-sm-6 reveal">
+                  <div class="card-soft feature-item"><span
+                      class="icon-tile amber"><i
+                        class="bi bi-clock-history"></i></span>
+                    <div>
+                      <h3>مواعيد مرنة</h3>
+                      <p>مواعيد صباحية ومسائية طوال الأسبوع وفي عطلة نهاية
+                        الأسبوع.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 reveal">
+                  <div class="card-soft feature-item"><span
+                      class="icon-tile amber"><i
+                        class="bi bi-hospital"></i></span>
+                    <div>
+                      <h3>التأمين الطبي</h3>
+                      <p>تقبل العيادة تعاقدات العديد من شركات التأمين
+                        والنقابات.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 reveal">
+                  <div class="card-soft feature-item"><span
+                      class="icon-tile amber"><i
+                        class="bi bi-house-heart"></i></span>
+                    <div>
+                      <h3>زيارات منزلية</h3>
+                      <p>زيارات منزلية لكبار السن وذوي الاحتياجات الخاصة.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 reveal">
+                  <div class="card-soft feature-item"><span
+                      class="icon-tile amber"><i
+                        class="bi bi-camera-video"></i></span>
+                    <div>
+                      <h3>استشارات عن بُعد</h3>
+                      <p>جلسات أونلاين لتوفير الرعاية من أي مكان.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 reveal">
+                  <div class="card-soft feature-item"><span
+                      class="icon-tile amber"><i
+                        class="bi bi-eyedropper"></i></span>
+                    <div>
+                      <h3>معمل تحاليل داخل العيادة</h3>
+                      <p>نتائج سريعة ودقيقة دون الحاجة للذهاب إلى معامل
+                        خارجية.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 reveal">
+                  <div class="card-soft feature-item"><span
+                      class="icon-tile amber"><i
+                        class="bi bi-building-up"></i></span>
+                    <div>
+                      <h3>تجهيزات العيادة</h3>
+                      <p>مصعد وتكييف ووسائل دفع إلكتروني (إنستاباي وفودافون
+                        كاش).</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-green-50">
+        <div class="container">
+          <div class="text-center mb-5 reveal"><span class="eyebrow">خطوات
+              بسيطة</span>
+            <h2 class="section-title">اعثر على الرعاية المناسبة لك</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4 step reveal">
+              <div class="n">1</div>
+              <h3 class="h5">استشارة الدكتورة سهام</h3>
+              <p class="text-muted-2 mb-0">استشر الدكتورة لأمراض الصدر والحساسية
+                والدرن (السل).</p>
+            </div>
+            <div class="col-md-4 step reveal">
+              <div class="n">2</div>
+              <h3 class="h5">حجز موعد</h3>
+              <p class="text-muted-2 mb-0">حدد موعدًا بسهولة — بالعيادة أو زيارة
+                منزلية أو عن بُعد.</p>
+            </div>
+            <div class="col-md-4 step reveal">
+              <div class="n">3</div>
+              <h3 class="h5">المتابعة والدفع</h3>
+              <p class="text-muted-2 mb-0">استلم المتابعات وأكمل الدفع نقدًا أو
+                إلكترونيًا.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reviews">
+        <div class="container">
+          <div class="row gy-5 gx-lg-5 align-items-center">
+            <div class="col-lg-4 reveal">
+              <span class="eyebrow">آراء المرضى</span>
+              <h2 class="section-title">ثقة تتحدث عنها كلمات مرضانا</h2>
+              <div class="reviews-score mt-4">
+                <div class="big">4.98</div>
+                <div class="rating-stars my-2 fs-5"><i
+                    class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i></div>
+                <div class="text-white-50">٧٢٢+ تقييم 5 نجوم من مرضانا الراضين —
+                  أكثر من ١٠٬٠٠٠ مريض يثقون في علاج د. سهام
+                  سالم</div>
+              </div>
+              <a class="btn btn-outline-primary mt-4"
+                href="testimonials.html">كل الآراء <i
+                  class="bi bi-arrow-left ms-1"></i></a>
+            </div>
+            <div class="col-lg-8 reveal">
+              <div id="reviewsCarousel" class="carousel slide"
+                data-bs-ride="carousel" data-bs-interval="6000"
+                aria-label="آراء المرضى">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <div class="card-soft review-card">
+                          <div class="rating-stars" aria-label="5 من 5"><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i></div>
+                          <p lang="ar" dir="rtl">دكتوره كويسه ومريحه وسكر جداااا
+                            وشطوره اوي ربنا يحفظها يارب</p>
+                          <div class="who"><span class="avatar"
+                              aria-hidden="true" lang="ar">ا</span><span
+                              lang="ar"
+                              dir="rtl">ايه ي.</span></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-soft review-card">
+                          <div class="rating-stars" aria-label="5 من 5"><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i></div>
+                          <p lang="ar" dir="rtl">من افضل دكاتره ما شاء الله</p>
+                          <div class="who"><span class="avatar"
+                              aria-hidden="true" lang="ar">ع</span><span
+                              lang="ar"
+                              dir="rtl">عاطف م.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <div class="card-soft review-card">
+                          <div class="rating-stars" aria-label="5 من 5"><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i></div>
+                          <p lang="ar" dir="rtl">دكتورة فوق ممتازة ربنا
+                            يباركلها</p>
+                          <div class="who"><span class="avatar"
+                              aria-hidden="true" lang="ar">ف</span><span
+                              lang="ar"
+                              dir="rtl">فهد ا.</span></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-soft review-card">
+                          <div class="rating-stars" aria-label="5 من 5"><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i></div>
+                          <p lang="ar" dir="rtl">دكتوره ممتازه جدا وبتراعى ربنا
+                            في شغلها...</p>
+                          <div class="who"><span class="avatar"
+                              aria-hidden="true" lang="ar">خ</span><span
+                              lang="ar"
+                              dir="rtl">خالد ع.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <div class="card-soft review-card">
+                          <div class="rating-stars" aria-label="5 من 5"><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i></div>
+                          <p lang="ar" dir="rtl">ما شاء الله دكتورة سهام ممتازة
+                            و مستمعة جيدة</p>
+                          <div class="who"><span class="avatar"
+                              aria-hidden="true" lang="ar">م</span><span
+                              lang="ar"
+                              dir="rtl">مريم ا.</span></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-soft review-card">
+                          <div class="rating-stars" aria-label="5 من 5"><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i></div>
+                          <p lang="ar" dir="rtl">دكتورة مهذبة وعندها حسن
+                            إستماع</p>
+                          <div class="who"><span class="avatar"
+                              aria-hidden="true" lang="ar">م</span><span
+                              lang="ar"
+                              dir="rtl">محمد أ.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <div class="card-soft review-card">
+                          <div class="rating-stars" aria-label="5 من 5"><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i></div>
+                          <p lang="ar" dir="rtl">دكتورة مستمعة جيدة وشاطرة ما
+                            شاء الله</p>
+                          <div class="who"><span class="avatar"
+                              aria-hidden="true" lang="ar">ن</span><span
+                              lang="ar"
+                              dir="rtl">نورا ف.</span></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-soft review-card">
+                          <div class="rating-stars" aria-label="5 من 5"><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i></div>
+                          <p lang="ar" dir="rtl">ماشاء الله كانت متواضعة جدا
+                            وتعاملها رائع...</p>
+                          <div class="who"><span class="avatar"
+                              aria-hidden="true" lang="ar">ص</span><span
+                              lang="ar"
+                              dir="rtl">صفية ج.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="carousel-nav d-flex gap-2 justify-content-center mt-4">
+                  <button class="btn btn-outline-primary"
+                    data-bs-target="#reviewsCarousel" data-bs-slide="prev"
+                    aria-label="السابق"><i
+                      class="bi bi-chevron-right"></i></button>
+                  <button class="btn btn-outline-primary"
+                    data-bs-target="#reviewsCarousel" data-bs-slide="next"
+                    aria-label="التالي"><i
+                      class="bi bi-chevron-left"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-green-900" id="videos">
+        <div class="container">
+          <div class="text-center mb-5 reveal"><span class="eyebrow"
+              style="color:#f0b968">فيديوهات</span>
+            <h2 class="section-title text-white">تعرّف على العيادة
+              والدكتورة</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4 reveal"><button type="button"
+                class="video-card" data-bs-toggle="modal"
+                data-bs-target="#videoModal" data-video="4fR9_fc_RaU"
+                aria-label="تشغيل الفيديو"><img
+                  src="https://img.youtube.com/vi/4fR9_fc_RaU/hqdefault.jpg" alt
+                  loading="lazy"><span
+                  class="play"><span><i
+                      class="bi bi-play-fill"></i></span></span></button></div>
+            <div class="col-md-4 reveal"><button type="button"
+                class="video-card" data-bs-toggle="modal"
+                data-bs-target="#videoModal" data-video="LbKGTHSXQtw"
+                aria-label="تشغيل الفيديو"><img
+                  src="https://img.youtube.com/vi/LbKGTHSXQtw/hqdefault.jpg" alt
+                  loading="lazy"><span
+                  class="play"><span><i
+                      class="bi bi-play-fill"></i></span></span></button></div>
+            <div class="col-md-4 reveal"><button type="button"
+                class="video-card" data-bs-toggle="modal"
+                data-bs-target="#videoModal" data-video="dNXVVzcuNfY"
+                aria-label="تشغيل الفيديو"><img
+                  src="https://img.youtube.com/vi/dNXVVzcuNfY/hqdefault.jpg" alt
+                  loading="lazy"><span
+                  class="play"><span><i
+                      class="bi bi-play-fill"></i></span></span></button></div>
+          </div>
+          <div class="text-center mt-4"><a class="btn btn-outline-light-2"
+              href="https://www.youtube.com/@drsehammostafasalemchestclinic"
+              target="_blank" rel="noopener"><i
+                class="bi bi-youtube me-1"></i> قناتنا على يوتيوب</a></div>
+        </div>
+      </section>
+      <div class="modal fade" id="videoModal" tabindex="-1"
+        aria-label="مشغل الفيديو" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div
+            class="modal-content bg-black border-0 rounded-4 overflow-hidden">
+            <button type="button"
+              class="btn-close btn-close-white position-absolute top-0 start-0 m-3"
+              style="z-index:2"
+              data-bs-dismiss="modal" aria-label="إغلاق"></button>
+            <div class="ratio ratio-16x9"><iframe id="videoFrame" src
+                title="فيديو"
+                allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen></iframe></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="row gy-5 gx-lg-5">
+            <div class="col-lg-4 reveal"><span class="eyebrow">أسئلة
+                شائعة</span>
+              <h2 class="section-title">نحن هنا لرعايتك بكل اهتمام</h2>
+              <p class="lead-sm">إجابات مختصرة على أكثر الأسئلة التي تصلنا من
+                المرضى.</p>
+            </div>
+            <div class="col-lg-8 reveal">
+              <div class="accordion" id="faqHome">
+                <div class="accordion-item">
+                  <h3 class="accordion-header"><button class="accordion-button"
+                      type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faqHome-0" aria-expanded="true"
+                      aria-controls="faqHome-0">هل ممارسة الرياضة
+                      المنتظمة تضر الأطفال المصابين بالربو؟</button></h3>
+                  <div id="faqHome-0" class="accordion-collapse collapse show"
+                    data-bs-parent="#faqHome">
+                    <div class="accordion-body">على عكس الاعتقاد الشائع بأن
+                      ممارسة الرياضة غير مناسبة للأطفال المصابين
+                      بالربو، فإن ممارسة الرياضة المنتظمة وخاصة السباحة ثبتت
+                      بالعديد من الدراسات أنها مفيدة جدًا للأطفال
+                      المصابين بالربو.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header"><button
+                      class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faqHome-1"
+                      aria-expanded="false"
+                      aria-controls="faqHome-1">هل عدوى الدرن (السل) في الغدد
+                      الليمفاوية معدية لأفراد العائلة؟</button>
+                  </h3>
+                  <div id="faqHome-1" class="accordion-collapse collapse"
+                    data-bs-parent="#faqHome">
+                    <div class="accordion-body">لا، العدوى غير معدية إلا إذا كان
+                      المريض يعاني من الدرن (السل) الرئوي النشط
+                      الذي يمكن أن ينتشر عبر الهواء أثناء التحدث أو السعال أو
+                      العطس.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header"><button
+                      class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faqHome-2"
+                      aria-expanded="false"
+                      aria-controls="faqHome-2">هل التهاب الأنف التحسسي يسبب
+                      الربو القصبي؟</button></h3>
+                  <div id="faqHome-2" class="accordion-collapse collapse"
+                    data-bs-parent="#faqHome">
+                    <div class="accordion-body">لا، لا يمكن أن يسبب الربو القصبي
+                      مباشرة، لكن كلا المرضين مرتبطان بحالات
+                      التهابية مزمنة تؤثر على المجاري الهوائية العليا والسفلى.
+                      كما أن الالتهاب الناتج عن التهاب الأنف
+                      التحسسي قد يزيد من شدة الربو، ومع علاج التهاب الأنف
+                      بالدواء يمكن تحسين السيطرة على الربو وتقليل
+                      الحاجة للطوارئ، لذا يوصى بتشخيص وعلاج كلا المرضين.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header"><button
+                      class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faqHome-3"
+                      aria-expanded="false"
+                      aria-controls="faqHome-3">ما هي الآثار الجانبية للقاح
+                      الإنفلونزا الموسمية؟</button></h3>
+                  <div id="faqHome-3" class="accordion-collapse collapse"
+                    data-bs-parent="#faqHome">
+                    <div class="accordion-body">ألم واحمرار وتورم في موقع الحقن.
+                      الأعراض الأقل شيوعًا تشمل الصداع، التعب،
+                      وارتفاع طفيف في درجة الحرارة. ومع ذلك، من المهم الوقاية من
+                      العدوى الشديدة بالإنفلونزا والالتهاب
+                      الرئوي الفيروسي، خاصة للمرضى المصابين بالربو القصبي، أمراض
+                      الانسداد الرئوي المزمن، الأمراض الرئوية
+                      الخلالية، الأمراض القلبية المزمنة والسكري.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header"><button
+                      class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faqHome-4"
+                      aria-expanded="false"
+                      aria-controls="faqHome-4">ما هي عدوى الدرن (السل) الكامنة
+                      وهل يحتاج جميع الحالات للعلاج؟</button>
+                  </h3>
+                  <div id="faqHome-4" class="accordion-collapse collapse"
+                    data-bs-parent="#faqHome">
+                    <div class="accordion-body">عدوى الدرن (السل) الكامنة هي
+                      حالة استجابة مناعية مستمرة لمستضدات متفطرة
+                      الدرنية (السلية) باستخدام اختبار الجلد للسل أو اختبار
+                      إطلاق إنترفيرون جاما (IGRA) بدون أي دليل على
+                      وجود الدرن (السل) النشط. في هذه الحالة، يُعالج فقط الأفراد
+                      ذوي المناعة الضعيفة، والذين كانوا على
+                      اتصال وثيق بأشخاص مصابين بالدرن (السل) الرئوي النشط.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section pt-0">
+        <div class="container">
+          <div class="cta-band">
+            <div class="row align-items-center g-4 position-relative"
+              style="z-index:1">
+              <div class="col-lg-8">
+                <h2 class="h1 fs-2 mb-2">صحة رئتيك تبدأ بموعد واحد</h2>
+                <p class="mb-0 fs-5">احجز كشفًا في العيادة أو زيارة منزلية أو
+                  استشارة عن بُعد — في الوقت الذي يناسبك.</p>
+              </div>
+              <div
+                class="col-lg-4 d-flex flex-wrap gap-2 justify-content-lg-end">
+                <a class="btn btn-amber btn-lg" href="appointment.html"><i
+                    class="bi bi-calendar-check me-1"></i> احجز
+                  الآن</a>
+                <a class="btn btn-outline-light-2 btn-lg"
+                  href="https://wa.me/201113144573" target="_blank"
+                  rel="noopener"><i class="bi bi-whatsapp me-1"></i> واتساب</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="site-footer">
+      <div class="container">
         <div class="row g-4">
-          <div class="col-sm-6 col-lg-4 reveal">
-            <article class="card-soft service-card"><span class="icon-tile"><i class="bi bi-flower1"></i></span>
-              <h3>استشارة أمراض الحساسية</h3>
-              <p>تقييم وعلاج حالات الحساسية والأمراض التنفسية الموسمية.</p>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4 reveal">
-            <article class="card-soft service-card"><span class="icon-tile"><i class="bi bi-virus"></i></span>
-              <h3>استشارة الدرن (السل)</h3>
-              <p>تشخيص ومتابعة حالات الدرن (السل) للرئة.</p>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4 reveal">
-            <article class="card-soft service-card"><span class="icon-tile"><i
-                  class="bi bi-clipboard2-pulse"></i></span>
-              <h3>متابعة الأمراض المزمنة للصدر</h3>
-              <p>متابعة الحالات المزمنة مثل الربو والتهاب الشعب الهوائية المزمن.</p>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4 reveal">
-            <article class="card-soft service-card"><span class="icon-tile"><i class="bi bi-moon-stars"></i></span>
-              <h3>تشخيص اضطرابات النوم</h3>
-              <p>تقييم حالات انقطاع النفس الانسدادي والنوم لدى البالغين والسمنة.</p>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4 reveal">
-            <article class="card-soft service-card"><span class="icon-tile"><i class="bi bi-balloon-heart"></i></span>
-              <h3>استشارات للأطفال من 6 أشهر</h3>
-              <p>رعاية طبية للأطفال بدءًا من عمر 6 أشهر.</p>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4 reveal">
-            <article class="card-soft service-card"><span class="icon-tile"><i class="bi bi-wind"></i></span>
-              <h3>علاج الربو</h3>
-              <p>خطط علاجية فردية للسيطرة على الربو والوقاية من النوبات.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="row gy-5 gx-lg-5 align-items-center">
-          <div class="col-lg-5 reveal">
-            <span class="eyebrow">لماذا عيادتنا</span>
-            <h2 class="section-title">نحرص على راحتك وصحتك</h2>
-            <p class="lead-sm">خدمات متميزة تلبي احتياجات المرضى مع الحفاظ على راحتهم وخصوصيتهم.</p>
-            <img class="rounded-4 w-100 mt-3 d-none d-lg-block" src="assets/img/clinic-desk.webp"
-              alt="الدكتورة سهام في العيادة" width="200" height="200" loading="lazy"
-              style="max-width:220px;box-shadow:0 20px 40px -24px rgba(13,58,48,.5)">
-            <a class="btn btn-primary mt-4" href="contact.html">تواصل معنا</a>
-          </div>
-          <div class="col-lg-7">
-            <div class="row g-3">
-              <div class="col-sm-6 reveal">
-                <div class="card-soft feature-item"><span class="icon-tile amber"><i
-                      class="bi bi-clock-history"></i></span>
-                  <div>
-                    <h3>مواعيد مرنة</h3>
-                    <p>مواعيد صباحية ومسائية طوال الأسبوع وفي عطلة نهاية الأسبوع.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 reveal">
-                <div class="card-soft feature-item"><span class="icon-tile amber"><i class="bi bi-hospital"></i></span>
-                  <div>
-                    <h3>التأمين الطبي</h3>
-                    <p>تقبل العيادة تعاقدات العديد من شركات التأمين والنقابات.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 reveal">
-                <div class="card-soft feature-item"><span class="icon-tile amber"><i
-                      class="bi bi-house-heart"></i></span>
-                  <div>
-                    <h3>زيارات منزلية</h3>
-                    <p>زيارات منزلية لكبار السن وذوي الاحتياجات الخاصة.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 reveal">
-                <div class="card-soft feature-item"><span class="icon-tile amber"><i
-                      class="bi bi-camera-video"></i></span>
-                  <div>
-                    <h3>استشارات عن بُعد</h3>
-                    <p>جلسات أونلاين لتوفير الرعاية من أي مكان.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 reveal">
-                <div class="card-soft feature-item"><span class="icon-tile amber"><i
-                      class="bi bi-eyedropper"></i></span>
-                  <div>
-                    <h3>معمل تحاليل داخل العيادة</h3>
-                    <p>نتائج سريعة ودقيقة دون الحاجة للذهاب إلى معامل خارجية.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 reveal">
-                <div class="card-soft feature-item"><span class="icon-tile amber"><i
-                      class="bi bi-building-up"></i></span>
-                  <div>
-                    <h3>تجهيزات العيادة</h3>
-                    <p>مصعد وتكييف ووسائل دفع إلكتروني (إنستاباي وفودافون كاش).</p>
-                  </div>
-                </div>
-              </div>
+          <div class="col-lg-5">
+            <a class="footer-logo mb-3" href="index.html"><img
+                src="assets/img/logo.webp" alt="عيادة د. سهام سالم للصدر"
+                width="81" height="54" loading="lazy"></a>
+            <p class="mt-3 pe-lg-5">عيادة متخصصة في أمراض الصدر والحساسية والدرن
+              (السل)، بخبرة تزيد عن ٢٠ عامًا ورعاية
+              تهتم بالتفاصيل.</p>
+            <div class="social d-flex gap-2 mt-3">
+              <a href="https://www.facebook.com/profile.php?id=61566491782382"
+                target="_blank" rel="noopener"
+                aria-label="فيسبوك"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/dr_seham_chest" target="_blank"
+                rel="noopener" aria-label="إنستغرام"><i
+                  class="bi bi-instagram"></i></a>
+              <a href="https://www.tiktok.com/@dr.seham.chest" target="_blank"
+                rel="noopener" aria-label="تيك توك"><i
+                  class="bi bi-tiktok"></i></a>
+              <a href="https://www.youtube.com/@drsehammostafasalemchestclinic"
+                target="_blank" rel="noopener"
+                aria-label="يوتيوب"><i class="bi bi-youtube"></i></a>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section bg-green-50">
-      <div class="container">
-        <div class="text-center mb-5 reveal"><span class="eyebrow">خطوات بسيطة</span>
-          <h2 class="section-title">اعثر على الرعاية المناسبة لك</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4 step reveal">
-            <div class="n">1</div>
-            <h3 class="h5">استشارة الدكتورة سهام</h3>
-            <p class="text-muted-2 mb-0">استشر الدكتورة لأمراض الصدر والحساسية والدرن (السل).</p>
+          <div class="col-6 col-lg-3">
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="services.html">الخدمات</a></li>
+              <li><a href="testimonials.html">آراء المرضى</a></li>
+              <li><a href="contact.html">اتصل بنا</a></li>
+              <li><a href="appointment.html">حجز موعد</a></li>
+            </ul>
           </div>
-          <div class="col-md-4 step reveal">
-            <div class="n">2</div>
-            <h3 class="h5">حجز موعد</h3>
-            <p class="text-muted-2 mb-0">حدد موعدًا بسهولة — بالعيادة أو زيارة منزلية أو عن بُعد.</p>
-          </div>
-          <div class="col-md-4 step reveal">
-            <div class="n">3</div>
-            <h3 class="h5">المتابعة والدفع</h3>
-            <p class="text-muted-2 mb-0">استلم المتابعات وأكمل الدفع نقدًا أو إلكترونيًا.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="reviews">
-      <div class="container">
-        <div class="row gy-5 gx-lg-5 align-items-center">
-          <div class="col-lg-4 reveal">
-            <span class="eyebrow">آراء المرضى</span>
-            <h2 class="section-title">ثقة تتحدث عنها كلمات مرضانا</h2>
-            <div class="reviews-score mt-4">
-              <div class="big">4.98</div>
-              <div class="rating-stars my-2 fs-5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-              <div class="text-white-50">٧٢٢+ تقييم 5 نجوم من مرضانا الراضين — أكثر من ١٠٬٠٠٠ مريض يثقون في علاج د. سهام
-                سالم</div>
-            </div>
-            <a class="btn btn-outline-primary mt-4" href="testimonials.html">كل الآراء <i
-                class="bi bi-arrow-left ms-1"></i></a>
-          </div>
-          <div class="col-lg-8 reveal">
-            <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000"
-              aria-label="آراء المرضى">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <div class="card-soft review-card">
-                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i></div>
-                        <p lang="ar" dir="rtl">دكتوره كويسه ومريحه وسكر جداااا وشطوره اوي ربنا يحفظها يارب</p>
-                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">ا</span><span lang="ar"
-                            dir="rtl">ايه ي.</span></div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-soft review-card">
-                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i></div>
-                        <p lang="ar" dir="rtl">من افضل دكاتره ما شاء الله</p>
-                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">ع</span><span lang="ar"
-                            dir="rtl">عاطف م.</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <div class="card-soft review-card">
-                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i></div>
-                        <p lang="ar" dir="rtl">دكتورة فوق ممتازة ربنا يباركلها</p>
-                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">ف</span><span lang="ar"
-                            dir="rtl">فهد ا.</span></div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-soft review-card">
-                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i></div>
-                        <p lang="ar" dir="rtl">دكتوره ممتازه جدا وبتراعى ربنا في شغلها...</p>
-                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">خ</span><span lang="ar"
-                            dir="rtl">خالد ع.</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <div class="card-soft review-card">
-                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i></div>
-                        <p lang="ar" dir="rtl">ما شاء الله دكتورة سهام ممتازة و مستمعة جيدة</p>
-                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">م</span><span lang="ar"
-                            dir="rtl">مريم ا.</span></div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-soft review-card">
-                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i></div>
-                        <p lang="ar" dir="rtl">دكتورة مهذبة وعندها حسن إستماع</p>
-                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">م</span><span lang="ar"
-                            dir="rtl">محمد أ.</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <div class="card-soft review-card">
-                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i></div>
-                        <p lang="ar" dir="rtl">دكتورة مستمعة جيدة وشاطرة ما شاء الله</p>
-                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">ن</span><span lang="ar"
-                            dir="rtl">نورا ف.</span></div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-soft review-card">
-                        <div class="rating-stars" aria-label="5 من 5"><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i></div>
-                        <p lang="ar" dir="rtl">ماشاء الله كانت متواضعة جدا وتعاملها رائع...</p>
-                        <div class="who"><span class="avatar" aria-hidden="true" lang="ar">ص</span><span lang="ar"
-                            dir="rtl">صفية ج.</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-nav d-flex gap-2 justify-content-center mt-4">
-                <button class="btn btn-outline-primary" data-bs-target="#reviewsCarousel" data-bs-slide="prev"
-                  aria-label="السابق"><i class="bi bi-chevron-right"></i></button>
-                <button class="btn btn-outline-primary" data-bs-target="#reviewsCarousel" data-bs-slide="next"
-                  aria-label="التالي"><i class="bi bi-chevron-left"></i></button>
-              </div>
-            </div>
+          <div class="col-6 col-lg-4">
+            <h4>تواصل معنا</h4>
+            <ul>
+              <li><i class="bi bi-telephone me-2 text-amber"></i><a
+                  href="tel:+201113144573" class="ltr">01113144573</a>
+              </li>
+              <li><i class="bi bi-whatsapp me-2 text-amber"></i><a
+                  href="https://wa.me/201113144573" target="_blank"
+                  rel="noopener">واتساب</a></li>
+              <li><i class="bi bi-geo-alt me-2 text-amber"></i><a
+                  href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
+                  target="_blank" rel="noopener">شارع عباس العقاد، المنطقة
+                  الأولى، مدينة نصر</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section bg-green-900" id="videos">
-      <div class="container">
-        <div class="text-center mb-5 reveal"><span class="eyebrow" style="color:#f0b968">فيديوهات</span>
-          <h2 class="section-title text-white">تعرّف على العيادة والدكتورة</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4 reveal"><button type="button" class="video-card" data-bs-toggle="modal"
-              data-bs-target="#videoModal" data-video="4fR9_fc_RaU" aria-label="تشغيل الفيديو"><img
-                src="https://img.youtube.com/vi/4fR9_fc_RaU/hqdefault.jpg" alt="" loading="lazy"><span
-                class="play"><span><i class="bi bi-play-fill"></i></span></span></button></div>
-          <div class="col-md-4 reveal"><button type="button" class="video-card" data-bs-toggle="modal"
-              data-bs-target="#videoModal" data-video="LbKGTHSXQtw" aria-label="تشغيل الفيديو"><img
-                src="https://img.youtube.com/vi/LbKGTHSXQtw/hqdefault.jpg" alt="" loading="lazy"><span
-                class="play"><span><i class="bi bi-play-fill"></i></span></span></button></div>
-          <div class="col-md-4 reveal"><button type="button" class="video-card" data-bs-toggle="modal"
-              data-bs-target="#videoModal" data-video="dNXVVzcuNfY" aria-label="تشغيل الفيديو"><img
-                src="https://img.youtube.com/vi/dNXVVzcuNfY/hqdefault.jpg" alt="" loading="lazy"><span
-                class="play"><span><i class="bi bi-play-fill"></i></span></span></button></div>
-        </div>
-        <div class="text-center mt-4"><a class="btn btn-outline-light-2"
-            href="https://www.youtube.com/@drsehammostafasalemchestclinic" target="_blank" rel="noopener"><i
-              class="bi bi-youtube me-1"></i> قناتنا على يوتيوب</a></div>
-      </div>
-    </section>
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-label="مشغل الفيديو" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content bg-black border-0 rounded-4 overflow-hidden">
-          <button type="button" class="btn-close btn-close-white position-absolute top-0 start-0 m-3" style="z-index:2"
-            data-bs-dismiss="modal" aria-label="إغلاق"></button>
-          <div class="ratio ratio-16x9"><iframe id="videoFrame" src="" title="فيديو"
-              allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+        <div
+          class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+          <span>© 2026 د. سهام سالم — جميع الحقوق محفوظة</span>
         </div>
       </div>
+    </footer>
+    <div class="fab-stack">
+      <a class="fab map" href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
+        target="_blank" rel="noopener"
+        aria-label="موقع العيادة على الخريطة"><i
+          class="bi bi-geo-alt-fill"></i></a>
+      <a class="fab wa" href="https://wa.me/201113144573" target="_blank"
+        rel="noopener" aria-label="تواصل عبر واتساب"><i
+          class="bi bi-whatsapp"></i></a>
     </div>
-
-    <section class="section" id="faq">
-      <div class="container">
-        <div class="row gy-5 gx-lg-5">
-          <div class="col-lg-4 reveal"><span class="eyebrow">أسئلة شائعة</span>
-            <h2 class="section-title">نحن هنا لرعايتك بكل اهتمام</h2>
-            <p class="lead-sm">إجابات مختصرة على أكثر الأسئلة التي تصلنا من المرضى.</p>
-          </div>
-          <div class="col-lg-8 reveal">
-            <div class="accordion" id="faqHome">
-              <div class="accordion-item">
-                <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faqHome-0" aria-expanded="true" aria-controls="faqHome-0">هل ممارسة الرياضة
-                    المنتظمة تضر الأطفال المصابين بالربو؟</button></h3>
-                <div id="faqHome-0" class="accordion-collapse collapse show" data-bs-parent="#faqHome">
-                  <div class="accordion-body">على عكس الاعتقاد الشائع بأن ممارسة الرياضة غير مناسبة للأطفال المصابين
-                    بالربو، فإن ممارسة الرياضة المنتظمة وخاصة السباحة ثبتت بالعديد من الدراسات أنها مفيدة جدًا للأطفال
-                    المصابين بالربو.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#faqHome-1" aria-expanded="false"
-                    aria-controls="faqHome-1">هل عدوى الدرن (السل) في الغدد الليمفاوية معدية لأفراد العائلة؟</button>
-                </h3>
-                <div id="faqHome-1" class="accordion-collapse collapse" data-bs-parent="#faqHome">
-                  <div class="accordion-body">لا، العدوى غير معدية إلا إذا كان المريض يعاني من الدرن (السل) الرئوي النشط
-                    الذي يمكن أن ينتشر عبر الهواء أثناء التحدث أو السعال أو العطس.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#faqHome-2" aria-expanded="false"
-                    aria-controls="faqHome-2">هل التهاب الأنف التحسسي يسبب الربو القصبي؟</button></h3>
-                <div id="faqHome-2" class="accordion-collapse collapse" data-bs-parent="#faqHome">
-                  <div class="accordion-body">لا، لا يمكن أن يسبب الربو القصبي مباشرة، لكن كلا المرضين مرتبطان بحالات
-                    التهابية مزمنة تؤثر على المجاري الهوائية العليا والسفلى. كما أن الالتهاب الناتج عن التهاب الأنف
-                    التحسسي قد يزيد من شدة الربو، ومع علاج التهاب الأنف بالدواء يمكن تحسين السيطرة على الربو وتقليل
-                    الحاجة للطوارئ، لذا يوصى بتشخيص وعلاج كلا المرضين.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#faqHome-3" aria-expanded="false"
-                    aria-controls="faqHome-3">ما هي الآثار الجانبية للقاح الإنفلونزا الموسمية؟</button></h3>
-                <div id="faqHome-3" class="accordion-collapse collapse" data-bs-parent="#faqHome">
-                  <div class="accordion-body">ألم واحمرار وتورم في موقع الحقن. الأعراض الأقل شيوعًا تشمل الصداع، التعب،
-                    وارتفاع طفيف في درجة الحرارة. ومع ذلك، من المهم الوقاية من العدوى الشديدة بالإنفلونزا والالتهاب
-                    الرئوي الفيروسي، خاصة للمرضى المصابين بالربو القصبي، أمراض الانسداد الرئوي المزمن، الأمراض الرئوية
-                    الخلالية، الأمراض القلبية المزمنة والسكري.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#faqHome-4" aria-expanded="false"
-                    aria-controls="faqHome-4">ما هي عدوى الدرن (السل) الكامنة وهل يحتاج جميع الحالات للعلاج؟</button>
-                </h3>
-                <div id="faqHome-4" class="accordion-collapse collapse" data-bs-parent="#faqHome">
-                  <div class="accordion-body">عدوى الدرن (السل) الكامنة هي حالة استجابة مناعية مستمرة لمستضدات متفطرة
-                    الدرنية (السلية) باستخدام اختبار الجلد للسل أو اختبار إطلاق إنترفيرون جاما (IGRA) بدون أي دليل على
-                    وجود الدرن (السل) النشط. في هذه الحالة، يُعالج فقط الأفراد ذوي المناعة الضعيفة، والذين كانوا على
-                    اتصال وثيق بأشخاص مصابين بالدرن (السل) الرئوي النشط.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section pt-0">
-      <div class="container">
-        <div class="cta-band">
-          <div class="row align-items-center g-4 position-relative" style="z-index:1">
-            <div class="col-lg-8">
-              <h2 class="h1 fs-2 mb-2">صحة رئتيك تبدأ بموعد واحد</h2>
-              <p class="mb-0 fs-5">احجز كشفًا في العيادة أو زيارة منزلية أو استشارة عن بُعد — في الوقت الذي يناسبك.</p>
-            </div>
-            <div class="col-lg-4 d-flex flex-wrap gap-2 justify-content-lg-end">
-              <a class="btn btn-amber btn-lg" href="appointment.html"><i class="bi bi-calendar-check me-1"></i> احجز
-                الآن</a>
-              <a class="btn btn-outline-light-2 btn-lg" href="https://wa.me/201113144573" target="_blank"
-                rel="noopener"><i class="bi bi-whatsapp me-1"></i> واتساب</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-5">
-          <a class="footer-logo mb-3" href="index.html"><img src="assets/img/logo.webp" alt="عيادة د. سهام سالم للصدر"
-              width="81" height="54" loading="lazy"></a>
-          <p class="mt-3 pe-lg-5">عيادة متخصصة في أمراض الصدر والحساسية والدرن (السل)، بخبرة تزيد عن ٢٠ عامًا ورعاية
-            تهتم بالتفاصيل.</p>
-          <div class="social d-flex gap-2 mt-3">
-            <a href="https://www.facebook.com/profile.php?id=61566491782382" target="_blank" rel="noopener"
-              aria-label="فيسبوك"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/dr_seham_chest" target="_blank" rel="noopener" aria-label="إنستغرام"><i
-                class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/@dr.seham.chest" target="_blank" rel="noopener" aria-label="تيك توك"><i
-                class="bi bi-tiktok"></i></a>
-            <a href="https://www.youtube.com/@drsehammostafasalemchestclinic" target="_blank" rel="noopener"
-              aria-label="يوتيوب"><i class="bi bi-youtube"></i></a>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <h4>روابط سريعة</h4>
-          <ul>
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="services.html">الخدمات</a></li>
-            <li><a href="testimonials.html">آراء المرضى</a></li>
-            <li><a href="contact.html">اتصل بنا</a></li>
-            <li><a href="appointment.html">حجز موعد</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-4">
-          <h4>تواصل معنا</h4>
-          <ul>
-            <li><i class="bi bi-telephone me-2 text-amber"></i><a href="tel:+201113144573" class="ltr">01113144573</a>
-            </li>
-            <li><i class="bi bi-whatsapp me-2 text-amber"></i><a href="https://wa.me/201113144573" target="_blank"
-                rel="noopener">واتساب</a></li>
-            <li><i class="bi bi-geo-alt me-2 text-amber"></i><a href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
-                target="_blank" rel="noopener">شارع عباس العقاد، المنطقة الأولى، مدينة نصر</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
-        <span>© 2026 د. سهام سالم — جميع الحقوق محفوظة</span>
-      </div>
+    <div class="mobile-cta">
+      <a class="btn btn-outline-primary" href="tel:+201113144573"><i
+          class="bi bi-telephone me-1"></i> اتصال</a>
+      <a class="btn btn-primary" href="appointment.html"><i
+          class="bi bi-calendar-check me-1"></i> احجز موعد</a>
     </div>
-  </footer>
-  <div class="fab-stack">
-    <a class="fab map" href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6" target="_blank" rel="noopener"
-      aria-label="موقع العيادة على الخريطة"><i class="bi bi-geo-alt-fill"></i></a>
-    <a class="fab wa" href="https://wa.me/201113144573" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب"><i
-        class="bi bi-whatsapp"></i></a>
-  </div>
-  <div class="mobile-cta">
-    <a class="btn btn-outline-primary" href="tel:+201113144573"><i class="bi bi-telephone me-1"></i> اتصال</a>
-    <a class="btn btn-primary" href="appointment.html"><i class="bi bi-calendar-check me-1"></i> احجز موعد</a>
-  </div>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 
 </html>
