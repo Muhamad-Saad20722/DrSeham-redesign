@@ -1,223 +1,505 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Book an Appointment | Dr. Seham Salem Chest Clinic</title>
-  <meta name="description"
-    content="Book an appointment with Dr. Seham Salem: clinic visit, home visit, phone call or Zoom consultation.">
-  <meta name="theme-color" content="#0d3a30">
-  <meta name="author" content="SoftwareSolutions">
-  <link rel="alternate" hreflang="ar" href="../appointment.html">
-  <link rel="alternate" hreflang="en" href="appointment.html">
-  <meta name="csrf-token" content="">
-  <meta property="og:title" content="Book an Appointment | Dr. Seham Salem Chest Clinic">
-  <meta property="og:description"
-    content="Book an appointment with Dr. Seham Salem: clinic visit, home visit, phone call or Zoom consultation.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="../assets/img/doctor.webp">
-  <link rel="icon" href="../assets/img/favicon.png">
-  <link rel="apple-touch-icon" href="../assets/img/favicon.png">
-  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="../assets/css/site.css">
-</head>
-
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="topbar d-none d-lg-block">
-    <div class="container d-flex justify-content-between align-items-center py-2">
-      <span><i class="bi bi-geo-alt"></i>Abbas El Akkad St., First District, Nasr City</span>
-      <span class="d-flex gap-4">
-        <a href="tel:+201113144573"><i class="bi bi-telephone"></i><span class="ltr">01113144573</span></a>
-        <a href="https://wa.me/201113144573" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>WhatsApp</a>
-      </span>
-    </div>
-  </div>
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg site-nav" aria-label="Main menu">
-      <div class="container">
-        <a class="navbar-brand" href="index.html" aria-label="Dr. Seham Salem - Chest Clinic"><img
-            src="../assets/img/logo.webp" alt="Dr. Seham Salem Chest Clinic logo" width="78" height="52"></a>
-        <div class="lang-toggle order-lg-3" role="group" aria-label="Language"><a href="../appointment.html" lang="ar" hreflang="ar" data-lang-switch="ar">عربي</a><a href="appointment.html" class="active" lang="en" hreflang="en" data-lang-switch="en" aria-current="true">EN</a></div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
-          aria-expanded="false" aria-label="Open menu"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-1">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="testimonials.html">Patient Reviews</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-          </ul>
-          <a class="btn btn-primary" href="appointment.html"><i class="bi bi-calendar-check me-1"></i> Book your
-            appointment</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <nav aria-label="Breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Book an Appointment</li>
-          </ol>
-        </nav>
-        <h1>Book an Appointment</h1>
-        <p>Choose the visit type, date and time that suit you, and you'll receive a booking confirmation.</p>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-8">
-            <form class="form-card" id="frontAppointmentBook" action="/front-appointment-book" method="post" novalidate>
-              <input type="hidden" name="_token" value="">
-              <input type="radio" name="gender" value="1" checked hidden>
-              <input type="hidden" name="doctor_id" id="doctor_id" value="1163">
-              <h2 class="h4 mb-4"><span class="text-amber">1.</span> Your details</h2>
-              <div class="row g-3 mb-4">
-                <div class="col-md-4"><label class="form-label" for="first_name">First name</label><input type="text"
-                    class="form-control" name="first_name" id="first_name" required autocomplete="given-name"></div>
-                <div class="col-md-4"><label class="form-label" for="last_name">Last name</label><input type="text"
-                    class="form-control" name="last_name" id="last_name" required autocomplete="family-name"></div>
-                <div class="col-md-4"><label class="form-label" for="contact">Phone number</label><input type="tel"
-                    class="form-control" name="contact" id="contact" required autocomplete="tel" inputmode="tel"
-                    dir="ltr" placeholder="01XXXXXXXXX"></div>
-              </div>
-              <h2 class="h4 mb-3"><span class="text-amber">2.</span> Choose visit type</h2>
-              <div class="choice-grid cols-4 mb-4" role="radiogroup" aria-label="Visit type">
-                <div class="choice"><input type="radio" name="branch_id" id="branch1" value="1" checked><label
-                    for="branch1"><i class="bi bi-building"></i>Clinic visit</label></div>
-                <div class="choice"><input type="radio" name="branch_id" id="branch2" value="2"><label for="branch2"><i
-                      class="bi bi-house-heart"></i>Home visit</label></div>
-                <div class="choice"><input type="radio" name="branch_id" id="branch3" value="3"><label for="branch3"><i
-                      class="bi bi-telephone"></i>Phone call</label></div>
-                <div class="choice"><input type="radio" name="branch_id" id="branch4" value="4"><label for="branch4"><i
-                      class="bi bi-camera-video"></i>Zoom consultation</label></div>
-              </div>
-              <h2 class="h4 mb-3"><span class="text-amber">3.</span> Date &amp; time</h2>
-              <div class="row g-3 mb-3">
-                <div class="col-md-6"><label class="form-label" for="appointmentDate">Booking date</label><input
-                    class="form-control" id="appointmentDate" type="date" name="date" required></div>
-              </div>
-              <input type="hidden" name="from_time" id="timeSlot" value=""><input type="hidden" name="to_time"
-                id="toTime" value="">
-              <label class="form-label">Available times</label>
-              <div class="slots-box mb-4" id="slotsBox" aria-live="polite">
-                <div class="slots" id="slotData">
-                  <p class="mb-0 text-muted-2 w-100 text-center">Choose a date to see available times.</p>
-                </div>
-              </div>
-              <h2 class="h4 mb-3"><span class="text-amber">4.</span> Payment method</h2>
-              <div class="choice-grid cols-3 mb-4" role="radiogroup" aria-label="Payment method">
-                <div class="choice"><input type="radio" name="payment_method" id="pay0" value="0" checked><label
-                    for="pay0"><i class="bi bi-cash-coin"></i>Cash</label></div>
-                <div class="choice"><input type="radio" name="payment_method" id="pay1" value="1"><label for="pay1"><i
-                      class="bi bi-phone"></i>Vodafone Cash</label></div>
-                <div class="choice"><input type="radio" name="payment_method" id="pay2" value="2"><label for="pay2"><i
-                      class="bi bi-credit-card-2-front"></i>Instapay</label></div>
-              </div>
-              <div class="mb-4"><label class="form-label" for="description">Notes (optional)</label><textarea
-                  class="form-control" name="description" id="description" rows="3"
-                  placeholder="Write anything you&#x27;d like us to know"></textarea></div>
-              <div id="successDiv" class="alert alert-success d-none" role="status"></div>
-              <div id="errorDiv" class="alert alert-danger d-none" role="alert"></div>
-              <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
-                <p class="mb-0 small text-muted-2"><i class="bi bi-lock-fill me-1"></i> We are committed to protecting
-                  your privacy. We won't collect any information about you without your explicit consent.</p>
-                <button class="btn btn-primary btn-lg" type="submit" id="send_message"><i
-                    class="bi bi-calendar-check me-1"></i> Confirm booking</button>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-4">
-            <div class="position-sticky" style="top:100px">
-              <aside class="aside-card mb-4 reveal">
-                <h3 class="mb-3">Why book with us?</h3>
-                <ul class="list-unstyled mb-0">
-                  <li><i class="bi bi-patch-check-fill"></i><span>Professional doctor with over 20 years of
-                      experience</span></li>
-                  <li><i class="bi bi-hospital"></i><span>Insurance and unions accepted</span></li>
-                  <li><i class="bi bi-percent"></i><span>Family and monthly follow-up discounts</span></li>
-                  <li><i class="bi bi-chat-heart"></i><span>Patient support and follow-up via WhatsApp</span></li>
-                </ul>
-              </aside>
-              <aside class="card-soft p-4 h-auto reveal">
-                <h3 class="h5 mb-3">Prefer to talk directly?</h3>
-                <p class="text-muted-2">Feel free to contact our reception staff with any medical inquiry.</p>
-                <a class="btn btn-primary w-100 mb-2" href="tel:+201113144573"><i class="bi bi-telephone me-1"></i>
-                  <span class="ltr">01113144573</span></a>
-                <a class="btn btn-whatsapp w-100" href="https://wa.me/201113144573" target="_blank" rel="noopener"><i
-                    class="bi bi-whatsapp me-1"></i> WhatsApp</a>
-              </aside>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Book an Appointment | Dr. Seham Salem Chest Clinic</title>
+        <meta name="description" content="Book an appointment with Dr. Seham Salem: clinic visit, home visit, phone call or Zoom consultation.">
+        <meta name="theme-color" content="#0d3a30">
+        <meta name="author" content="SoftwareSolutions">
+        <link rel="alternate" hreflang="ar" href="../appointment.html">
+        <link rel="alternate" hreflang="en" href="appointment.html">
+        <meta name="csrf-token" content="">
+        <meta property="og:title" content="Book an Appointment | Dr. Seham Salem Chest Clinic">
+        <meta property="og:description" content="Book an appointment with Dr. Seham Salem: clinic visit, home visit, phone call or Zoom consultation.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="../assets/img/doctor.webp">
+        <link rel="icon" href="../assets/img/favicon.png">
+        <link rel="apple-touch-icon" href="../assets/img/favicon.png">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../assets/css/site.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <div class="topbar d-none d-lg-block">
+            <div class="container d-flex justify-content-between align-items-center py-2">
+                <span>
+                    <i class="bi bi-geo-alt"></i>Abbas El Akkad St., First District, Nasr City
+                </span>
+                <span class="d-flex gap-4">
+                    <a href="tel:+201113144573">
+                        <i class="bi bi-telephone"></i>
+                        <span class="ltr">01113144573</span>
+                    </a>
+                    <a href="https://wa.me/201113144573" target="_blank" rel="noopener">
+                        <i class="bi bi-whatsapp"></i>WhatsApp
+                    </a>
+                </span>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-5">
-          <a class="footer-logo mb-3" href="index.html"><img src="../assets/img/logo.webp"
-              alt="Dr. Seham Salem Chest Clinic" width="81" height="54" loading="lazy"></a>
-          <p class="mt-3 pe-lg-5">A clinic specialising in chest diseases, allergy and tuberculosis (TB), with over 20
-            years of experience and care that pays attention to detail.</p>
-          <div class="social d-flex gap-2 mt-3">
-            <a href="https://www.facebook.com/profile.php?id=61566491782382" target="_blank" rel="noopener"
-              aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/dr_seham_chest" target="_blank" rel="noopener" aria-label="Instagram"><i
-                class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/@dr.seham.chest" target="_blank" rel="noopener" aria-label="TikTok"><i
-                class="bi bi-tiktok"></i></a>
-            <a href="https://www.youtube.com/@drsehammostafasalemchestclinic" target="_blank" rel="noopener"
-              aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-          </div>
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg site-nav" aria-label="Main menu">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html" aria-label="Dr. Seham Salem - Chest Clinic">
+                        <img
+                            src="../assets/img/logo.webp"
+                            alt="Dr. Seham Salem Chest Clinic logo"
+                            width="78"
+                            height="52"
+                        >
+                    </a>
+                    <div class="lang-toggle order-lg-3" role="group" aria-label="Language">
+                        <a
+                            href="../appointment.html"
+                            lang="ar"
+                            hreflang="ar"
+                            data-lang-switch="ar"
+                        >عربي</a>
+                        <a
+                            href="appointment.html"
+                            class="active"
+                            lang="en"
+                            hreflang="en"
+                            data-lang-switch="en"
+                            aria-current="true"
+                        >EN</a>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#nav"
+                        aria-controls="nav"
+                        aria-expanded="false"
+                        aria-label="Open menu"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="nav">
+                        <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="testimonials.html">Patient Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-primary" href="appointment.html">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Book your
+            appointment
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <section class="page-hero">
+                <div class="container">
+                    <nav aria-label="Breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Book an Appointment</li>
+                        </ol>
+                    </nav>
+                    <h1>Book an Appointment</h1>
+                    <p>Choose the visit type, date and time that suit you, and you'll receive a booking confirmation.</p>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <form
+                                class="form-card"
+                                id="frontAppointmentBook"
+                                action="/front-appointment-book"
+                                method="post"
+                                novalidate
+                            >
+                                <input type="hidden" name="_token" value="">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="1"
+                                    checked
+                                    hidden
+                                >
+                                <input
+                                    type="hidden"
+                                    name="doctor_id"
+                                    id="doctor_id"
+                                    value="1163"
+                                >
+                                <h2 class="h4 mb-4">
+                                    <span class="text-amber">1.</span> Your details
+                                </h2>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="first_name">First name</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            name="first_name"
+                                            id="first_name"
+                                            required
+                                            autocomplete="given-name"
+                                        >
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="last_name">Last name</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            name="last_name"
+                                            id="last_name"
+                                            required
+                                            autocomplete="family-name"
+                                        >
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="contact">Phone number</label>
+                                        <input
+                                            type="tel"
+                                            class="form-control"
+                                            name="contact"
+                                            id="contact"
+                                            required
+                                            autocomplete="tel"
+                                            inputmode="tel"
+                                            dir="ltr"
+                                            placeholder="01XXXXXXXXX"
+                                        >
+                                    </div>
+                                </div>
+                                <h2 class="h4 mb-3">
+                                    <span class="text-amber">2.</span> Choose visit type
+                                </h2>
+                                <div class="choice-grid cols-4 mb-4" role="radiogroup" aria-label="Visit type">
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="branch_id"
+                                            id="branch1"
+                                            value="1"
+                                            checked
+                                        >
+                                        <label for="branch1">
+                                            <i class="bi bi-building"></i>Clinic visit
+                                        </label>
+                                    </div>
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="branch_id"
+                                            id="branch2"
+                                            value="2"
+                                        >
+                                        <label for="branch2">
+                                            <i class="bi bi-house-heart"></i>Home visit
+                                        </label>
+                                    </div>
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="branch_id"
+                                            id="branch3"
+                                            value="3"
+                                        >
+                                        <label for="branch3">
+                                            <i class="bi bi-telephone"></i>Phone call
+                                        </label>
+                                    </div>
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="branch_id"
+                                            id="branch4"
+                                            value="4"
+                                        >
+                                        <label for="branch4">
+                                            <i class="bi bi-camera-video"></i>Zoom consultation
+                                        </label>
+                                    </div>
+                                </div>
+                                <h2 class="h4 mb-3">
+                                    <span class="text-amber">3.</span> Date &amp; time
+                                </h2>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="appointmentDate">Booking date</label>
+                                        <input
+                                            class="form-control"
+                                            id="appointmentDate"
+                                            type="date"
+                                            name="date"
+                                            required
+                                        >
+                                    </div>
+                                </div>
+                                <input
+                                    type="hidden"
+                                    name="from_time"
+                                    id="timeSlot"
+                                    value=""
+                                >
+                                <input
+                                    type="hidden"
+                                    name="to_time"
+                                    id="toTime"
+                                    value=""
+                                >
+                                <label class="form-label">Available times</label>
+                                <div class="slots-box mb-4" id="slotsBox" aria-live="polite">
+                                    <div class="slots" id="slotData">
+                                        <p class="mb-0 text-muted-2 w-100 text-center">Choose a date to see available times.</p>
+                                    </div>
+                                </div>
+                                <h2 class="h4 mb-3">
+                                    <span class="text-amber">4.</span> Payment method
+                                </h2>
+                                <div class="choice-grid cols-3 mb-4" role="radiogroup" aria-label="Payment method">
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="payment_method"
+                                            id="pay0"
+                                            value="0"
+                                            checked
+                                        >
+                                        <label for="pay0">
+                                            <i class="bi bi-cash-coin"></i>Cash
+                                        </label>
+                                    </div>
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="payment_method"
+                                            id="pay1"
+                                            value="1"
+                                        >
+                                        <label for="pay1">
+                                            <i class="bi bi-phone"></i>Vodafone Cash
+                                        </label>
+                                    </div>
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="payment_method"
+                                            id="pay2"
+                                            value="2"
+                                        >
+                                        <label for="pay2">
+                                            <i class="bi bi-credit-card-2-front"></i>Instapay
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label" for="description">Notes (optional)</label>
+                                    <textarea
+                                        class="form-control"
+                                        name="description"
+                                        id="description"
+                                        rows="3"
+                                        placeholder="Write anything you&#x27;d like us to know"
+                                    ></textarea>
+                                </div>
+                                <div id="successDiv" class="alert alert-success d-none" role="status"></div>
+                                <div id="errorDiv" class="alert alert-danger d-none" role="alert"></div>
+                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                    <p class="mb-0 small text-muted-2">
+                                        <i class="bi bi-lock-fill me-1"></i>
+                                        We are committed to protecting
+                  your privacy. We won't collect any information about you without your explicit consent.
+                                    </p>
+                                    <button class="btn btn-primary btn-lg" type="submit" id="send_message">
+                                        <i class="bi bi-calendar-check me-1"></i> Confirm booking
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="position-sticky" style="top:100px">
+                                <aside class="aside-card mb-4 reveal">
+                                    <h3 class="mb-3">Why book with us?</h3>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <i class="bi bi-patch-check-fill"></i>
+                                            <span>
+                                                Professional doctor with over 20 years of
+                      experience
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-hospital"></i>
+                                            <span>Insurance and unions accepted</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-percent"></i>
+                                            <span>Family and monthly follow-up discounts</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-chat-heart"></i>
+                                            <span>Patient support and continuous follow-up</span>
+                                        </li>
+                                    </ul>
+                                </aside>
+                                <aside class="card-soft p-4 h-auto reveal">
+                                    <h3 class="h5 mb-3">Prefer to talk directly?</h3>
+                                    <p class="text-muted-2">Feel free to contact our reception staff with any medical inquiry.</p>
+                                    <a class="btn btn-primary w-100 mb-2" href="tel:+201113144573">
+                                        <i class="bi bi-telephone me-1"></i>
+                                        <span class="ltr">01113144573</span>
+                                    </a>
+                                    <a
+                                        class="btn btn-whatsapp w-100"
+                                        href="https://wa.me/201113144573"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        <i class="bi bi-whatsapp me-1"></i> WhatsApp
+                                    </a>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <a class="footer-logo mb-3" href="index.html">
+                            <img
+                                src="../assets/img/logo.webp"
+                                alt="Dr. Seham Salem Chest Clinic"
+                                width="81"
+                                height="54"
+                                loading="lazy"
+                            >
+                        </a>
+                        <p class="mt-3 pe-lg-5">
+                            A clinic specialising in chest diseases, allergy and tuberculosis (TB), with over 20
+            years of experience and care that pays attention to detail.
+                        </p>
+                        <div class="social d-flex gap-2 mt-3">
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61566491782382"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Facebook"
+                            >
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/dr_seham_chest"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Instagram"
+                            >
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a
+                                href="https://www.tiktok.com/@dr.seham.chest"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="TikTok"
+                            >
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@drsehammostafasalemchestclinic"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="YouTube"
+                            >
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <h4>Quick links</h4>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="testimonials.html">Patient Reviews</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="appointment.html">Book an Appointment</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <h4>Contact us</h4>
+                        <ul>
+                            <li>
+                                <i class="bi bi-telephone me-2 text-amber"></i>
+                                <a href="tel:+201113144573" class="ltr">+201113144573</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-whatsapp me-2 text-amber"></i>
+                                <a href="https://wa.me/201113144573" target="_blank" rel="noopener">WhatsApp</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-geo-alt me-2 text-amber"></i>
+                                <a href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6" target="_blank" rel="noopener">Abbas El Akkad St., First District, Nasr City</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+                    <span>© 2026 Dr. Seham Salem — All rights reserved</span>
+                </div>
+            </div>
+        </footer>
+        <div class="fab-stack">
+            <a
+                class="fab map"
+                href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
+                target="_blank"
+                rel="noopener"
+                aria-label="Clinic location on the map"
+            >
+                <i class="bi bi-geo-alt-fill"></i>
+            </a>
+            <a
+                class="fab wa"
+                href="https://wa.me/201113144573"
+                target="_blank"
+                rel="noopener"
+                aria-label="Contact via WhatsApp"
+            >
+                <i class="bi bi-whatsapp"></i>
+            </a>
         </div>
-        <div class="col-6 col-lg-3">
-          <h4>Quick links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="testimonials.html">Patient Reviews</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="appointment.html">Book an Appointment</a></li>
-          </ul>
+        <div class="mobile-cta">
+            <a class="btn btn-outline-primary" href="tel:+201113144573">
+                <i class="bi bi-telephone me-1"></i> Call
+            </a>
+            <a class="btn btn-primary" href="appointment.html">
+                <i class="bi bi-calendar-check me-1"></i> Book appointment
+            </a>
         </div>
-        <div class="col-6 col-lg-4">
-          <h4>Contact us</h4>
-          <ul>
-            <li><i class="bi bi-telephone me-2 text-amber"></i><a href="tel:+201113144573" class="ltr">01113144573</a>
-            </li>
-            <li><i class="bi bi-whatsapp me-2 text-amber"></i><a href="https://wa.me/201113144573" target="_blank"
-                rel="noopener">WhatsApp</a></li>
-            <li><i class="bi bi-geo-alt me-2 text-amber"></i><a href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
-                target="_blank" rel="noopener">Abbas El Akkad St., First District, Nasr City</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
-        <span>© 2026 Dr. Seham Salem — All rights reserved</span>
-      </div>
-    </div>
-  </footer>
-  <div class="fab-stack">
-    <a class="fab map" href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6" target="_blank" rel="noopener"
-      aria-label="Clinic location on the map"><i class="bi bi-geo-alt-fill"></i></a>
-    <a class="fab wa" href="https://wa.me/201113144573" target="_blank" rel="noopener"
-      aria-label="Contact via WhatsApp"><i class="bi bi-whatsapp"></i></a>
-  </div>
-  <div class="mobile-cta">
-    <a class="btn btn-outline-primary" href="tel:+201113144573"><i class="bi bi-telephone me-1"></i> Call</a>
-    <a class="btn btn-primary" href="appointment.html"><i class="bi bi-calendar-check me-1"></i> Book appointment</a>
-  </div>
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/booking.js"></script>
-</body>
-
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/booking.js"></script>
+    </body>
 </html>
