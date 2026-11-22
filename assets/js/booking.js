@@ -79,17 +79,81 @@
     }
   }
 
+  // Clinic working hours (index = Date.getDay(): 0 Sunday ... 6 Saturday), 30-minute slots
+  var HOURS = {
+    0: ["18:30", "21:00"],
+    1: ["18:30", "21:00"],
+    2: ["15:30", "18:30"],
+    3: ["18:30", "21:00"],
+    4: ["16:30", "19:00"],
+    5: ["19:00", "21:00"],
+    6: ["15:30", "18:30"],
+  };
+  var STEP = 30;
+  function toMin(t) {
+    var p = t.split(":");
+    return +p[0] * 60 + +p[1];
+  }
+  function fmt(m) {
+    return (
+      String(Math.floor(m / 60)).padStart(2, "0") +
+      ":" +
+      String(m % 60).padStart(2, "0")
+    );
+  }
+  function localSlots(dateStr) {
+    var d = dateStr.split("-");
+    var day = new Date(+d[0], +d[1] - 1, +d[2]);
+    var h = HOURS[day.getDay()];
+    var out = [];
+    if (!h) return out;
+    var now = new Date();
+    var isToday = day.toDateString() === now.toDateString();
+    var nowMin = now.getHours() * 60 + now.getMinutes();
+    for (var m = toMin(h[0]); m + STEP <= toMin(h[1]); m += STEP) {
+      if (isToday && m <= nowMin) continue; // already passed
+      out.push(fmt(m) + " - " + fmt(m + STEP));
+    }
+    return out;
+  }
+
+  function renderSlots(slots, booked) {
+    slotData.innerHTML = "";
+    slots.forEach(function (slot) {
+      var s = document.createElement("button");
+      s.type = "button";
+      s.textContent = slot;
+      s.setAttribute("dir", "ltr");
+      s.className = "time-slot";
+      if (booked.indexOf(slot) !== -1) {
+        s.classList.add("booked");
+        s.disabled = true;
+      } else
+        s.addEventListener("click", function () {
+          selectSlot(s);
+        });
+      slotData.appendChild(s);
+    });
+  }
+
   function fetchSlots() {
     document.getElementById("timeSlot").value = "";
     document.getElementById("toTime").value = "";
     var doctor = document.getElementById("doctor_id").value,
       date = dateInput.value,
       b = branch();
-    if (!doctor || !date || !b) {
+    if (!date) {
       setSlotsMessage(M.pick);
       return;
     }
-    setSlotsMessage(M.loading);
+    var slots = localSlots(date);
+    if (!slots.length) {
+      setSlotsMessage(M.none);
+      return;
+    }
+    renderSlots(slots, []);
+    // Optional: grey out slots already booked, when the booking server is reachable.
+    // If the request fails the slots stay available (no error is shown).
     var url =
       API +
       "/doctor-session-time?adminAppointmentDoctorId=" +
@@ -105,30 +169,21 @@
         return r.json();
       })
       .then(function (res) {
-        slotData.innerHTML = "";
-        if (res.success && res.slots && res.slots.length) {
-          var booked = res.bookedSlot || [];
-          res.slots.forEach(function (slot) {
-            var s = document.createElement("button");
-            s.type = "button";
-            s.textContent = slot;
-            s.className = "time-slot";
-            if (booked.indexOf(slot) !== -1) {
-              s.classList.add("booked");
-              s.disabled = true;
-            } else
-              s.addEventListener("click", function () {
-                selectSlot(s);
-              });
-            slotData.appendChild(s);
-          });
-        } else {
-          setSlotsMessage(M.none);
+        if (dateInput.value !== date || !res || !res.bookedSlot) return;
+        var chosen = document.getElementById("timeSlot").value;
+        var booked = res.bookedSlot.filter(function (x) {
+          return slots.indexOf(x) !== -1;
+        });
+        if (booked.length) {
+          renderSlots(slots, booked);
+          if (chosen) {
+            slotData.querySelectorAll(".time-slot").forEach(function (el) {
+              if (el.textContent.split("-")[0].trim() === chosen) selectSlot(el);
+            });
+          }
         }
       })
-      .catch(function () {
-        setSlotsMessage(M.fail, "text-danger");
-      });
+      .catch(function () {});
   }
 
   dateInput.addEventListener("change", fetchSlots);

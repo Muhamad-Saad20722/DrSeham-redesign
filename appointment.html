@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="utf-8" />
-    <script id="lang-redirect">
+    <head>
+        <meta charset="utf-8">
+        <script id="lang-redirect">
       try {
         if (
           localStorage.getItem("clinic-lang") === "en" &&
@@ -16,518 +16,637 @@
           );
         }
       } catch (e) {}
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>حجز موعد | عيادة د. سهام سالم للصدر</title>
-    <meta
-      name="description"
-      content="احجز موعدًا مع د. سهام سالم: كشف بالعيادة، زيارة منزلية، مكالمة هاتفية أو استشارة عبر زوم."
-    />
-    <meta name="theme-color" content="#0d3a30" />
-    <meta name="author" content="SoftwareSolutions" />
-    <link rel="alternate" hreflang="ar" href="appointment.html" />
-    <link rel="alternate" hreflang="en" href="en/appointment.html" />
-    <meta name="csrf-token" content />
-    <meta property="og:title" content="حجز موعد | عيادة د. سهام سالم للصدر" />
-    <meta
-      property="og:description"
-      content="احجز موعدًا مع د. سهام سالم: كشف بالعيادة، زيارة منزلية، مكالمة هاتفية أو استشارة عبر زوم."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/img/doctor.webp" />
-    <link rel="icon" href="assets/img/favicon.png" />
-    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
-    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="assets/css/site.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
-    <div class="topbar d-none d-lg-block">
-      <div
-        class="container d-flex justify-content-between align-items-center py-2"
-      >
-        <span
-          ><i class="bi bi-geo-alt"></i>شارع عباس العقاد، المنطقة الأولى، مدينة
-          نصر</span
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>حجز موعد | عيادة د. سهام سالم للصدر</title>
+        <meta name="description" content="احجز موعدًا مع د. سهام سالم: كشف بالعيادة، زيارة منزلية، مكالمة هاتفية أو استشارة عبر زوم.">
+        <meta name="theme-color" content="#0d3a30">
+        <meta name="author" content="SoftwareSolutions">
+        <meta name="csrf-token" content>
+        <meta property="og:title" content="حجز موعد | عيادة د. سهام سالم للصدر">
+        <meta property="og:description" content="احجز موعدًا مع د. سهام سالم: كشف بالعيادة، زيارة منزلية، مكالمة هاتفية أو استشارة عبر زوم.">
+        <meta property="og:type" content="website">
+        <link rel="canonical" href="https://drsehamsalemchestclinic.com/appointment.html">
+        <link rel="alternate" hreflang="ar" href="https://drsehamsalemchestclinic.com/appointment.html">
+        <link rel="alternate" hreflang="en" href="https://drsehamsalemchestclinic.com/en/appointment.html">
+        <link rel="alternate" hreflang="x-default" href="https://drsehamsalemchestclinic.com/appointment.html">
+        <meta property="og:url" content="https://drsehamsalemchestclinic.com/appointment.html">
+        <meta property="og:locale" content="ar_EG">
+        <meta property="og:site_name" content="عيادة د. سهام سالم للصدر">
+        <meta property="og:image" content="https://drsehamsalemchestclinic.com/assets/img/doctor.webp">
+        <link rel="icon" href="assets/img/favicon.png">
+        <link rel="apple-touch-icon" href="assets/img/favicon.png">
+        <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="assets/css/site.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+        <div class="topbar d-none d-lg-block">
+            <div class="container d-flex justify-content-between align-items-center py-2">
+                <span>
+                    <i class="bi bi-geo-alt"></i>
+                    شارع عباس العقاد، المنطقة الأولى، مدينة
+          نصر
+                </span
         >
-        <span class="d-flex gap-4">
-          <a href="tel:+201113144573"
-            ><i class="bi bi-telephone"></i
-            ><span class="ltr">01113144573</span></a
-          >
-          <a href="https://wa.me/201113144573" target="_blank" rel="noopener"
-            ><i class="bi bi-whatsapp"></i>واتساب</a
-          >
-        </span>
-      </div>
-    </div>
-    <header class="sticky-top">
-      <nav
-        class="navbar navbar-expand-lg site-nav"
-        aria-label="القائمة الرئيسية"
-      >
-        <div class="container">
-          <a
-            class="navbar-brand"
-            href="index.html"
-            aria-label="د. سهام سالم - عيادة الصدر"
-            ><img
-              src="assets/img/logo.webp"
-              alt="شعار عيادة د. سهام سالم للصدر"
-              width="78"
-              height="52"
-          /></a>
-          <div class="lang-toggle order-lg-3" role="group" aria-label="اللغة">
-            <a
-              href="appointment.html"
-              class="active"
-              lang="ar"
-              hreflang="ar"
-              data-lang-switch="ar"
-              aria-current="true"
-              >عربي</a
-            ><a
-              href="en/appointment.html"
-              lang="en"
-              hreflang="en"
-              data-lang-switch="en"
-              >EN</a
+                <span class="d-flex gap-4">
+                    <a href="tel:+201113144573">
+                        <i class="bi bi-telephone">
+                        </i
             >
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#nav"
-            aria-controls="nav"
-            aria-expanded="false"
-            aria-label="فتح القائمة"
+                        <span class="ltr">01113144573</span>
+                    </a
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-1">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">الرئيسية</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">الخدمات</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="testimonials.html">آراء المرضى</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">اتصل بنا</a>
-              </li>
-            </ul>
-            <a class="btn btn-primary" href="appointment.html"
-              ><i class="bi bi-calendar-check me-1"></i> احجز موعدك</a
+                    <a href="https://wa.me/201113144573" target="_blank" rel="noopener">
+                        <i class="bi bi-whatsapp"></i>واتساب
+                    </a
+          >
+                </span>
+            </div>
+        </div>
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg site-nav" aria-label="القائمة الرئيسية">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html" aria-label="د. سهام سالم - عيادة الصدر">
+                        <img
+                            src="assets/img/logo.webp"
+                            alt="شعار عيادة د. سهام سالم للصدر"
+                            width="78"
+                            height="52"
+                        >
+                    </a>
+                    <div class="lang-toggle order-lg-3" role="group" aria-label="اللغة">
+                        <a
+                            href="appointment.html"
+                            class="active"
+                            lang="ar"
+                            hreflang="ar"
+                            data-lang-switch="ar"
+                            aria-current="true"
+                        >عربي
+                        </a
             >
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main id="main">
-      <section class="page-hero">
-        <div class="container">
-          <nav aria-label="مسار التنقل">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                حجز موعد
-              </li>
-            </ol>
-          </nav>
-          <h1>حجز موعد</h1>
-          <p>اختر نوع الكشف والتاريخ والوقت المناسب لك، وسيصلك تأكيد الحجز.</p>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-lg-8">
-              <form
-                class="form-card"
-                id="frontAppointmentBook"
-                action="/front-appointment-book"
-                method="post"
-                novalidate
-              >
-                <input type="hidden" name="_token" value />
-                <input type="radio" name="gender" value="1" checked hidden />
-                <input
-                  type="hidden"
-                  name="doctor_id"
-                  id="doctor_id"
-                  value="1163"
-                />
-                <h2 class="h4 mb-4">
-                  <span class="text-amber">1.</span> بياناتك
-                </h2>
-                <div class="row g-3 mb-4">
-                  <div class="col-md-4">
-                    <label class="form-label" for="first_name"
-                      >الاسم الأول</label
-                    ><input
-                      type="text"
-                      class="form-control"
-                      name="first_name"
-                      id="first_name"
-                      required
-                      autocomplete="given-name"
-                    />
-                  </div>
-                  <div class="col-md-4">
-                    <label class="form-label" for="last_name">اسم العائلة</label
-                    ><input
-                      type="text"
-                      class="form-control"
-                      name="last_name"
-                      id="last_name"
-                      required
-                      autocomplete="family-name"
-                    />
-                  </div>
-                  <div class="col-md-4">
-                    <label class="form-label" for="contact">رقم الهاتف</label
-                    ><input
-                      type="tel"
-                      class="form-control"
-                      name="contact"
-                      id="contact"
-                      required
-                      autocomplete="tel"
-                      inputmode="tel"
-                      dir="ltr"
-                      placeholder="01XXXXXXXXX"
-                    />
-                  </div>
+                        <a
+                            href="en/appointment.html"
+                            lang="en"
+                            hreflang="en"
+                            data-lang-switch="en"
+                        >EN
+                        </a
+            >
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#nav"
+                        aria-controls="nav"
+                        aria-expanded="false"
+                        aria-label="فتح القائمة"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="nav">
+                        <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">الخدمات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="articles.html">المقالات والشهادات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="testimonials.html">آراء المرضى</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">اتصل بنا</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-primary" href="appointment.html">
+                            <i class="bi bi-calendar-check me-1"></i> احجز موعدك
+                        </a
+            >
+                    </div>
                 </div>
-                <h2 class="h4 mb-3">
-                  <span class="text-amber">2.</span> اختر طريقة الكشف
-                </h2>
-                <div
-                  class="choice-grid cols-4 mb-4"
-                  role="radiogroup"
-                  aria-label="طريقة الكشف"
-                >
-                  <div class="choice">
-                    <input
-                      type="radio"
-                      name="branch_id"
-                      id="branch1"
-                      value="1"
-                      checked
-                    /><label for="branch1"
-                      ><i class="bi bi-building"></i>موعد بالعيادة</label
-                    >
-                  </div>
-                  <div class="choice">
-                    <input
-                      type="radio"
-                      name="branch_id"
-                      id="branch2"
-                      value="2"
-                    /><label for="branch2"
-                      ><i class="bi bi-house-heart"></i>زيارة منزلية</label
-                    >
-                  </div>
-                  <div class="choice">
-                    <input
-                      type="radio"
-                      name="branch_id"
-                      id="branch3"
-                      value="3"
-                    /><label for="branch3"
-                      ><i class="bi bi-telephone"></i>مكالمة هاتفية</label
-                    >
-                  </div>
-                  <div class="choice">
-                    <input
-                      type="radio"
-                      name="branch_id"
-                      id="branch4"
-                      value="4"
-                    /><label for="branch4"
-                      ><i class="bi bi-camera-video"></i>استشارة عبر زووم</label
-                    >
-                  </div>
+            </nav>
+        </header>
+        <main id="main">
+            <section class="page-hero">
+                <div class="container">
+                    <nav aria-label="مسار التنقل">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                حجز موعد
+                            </li>
+                        </ol>
+                    </nav>
+                    <h1>حجز موعد</h1>
+                    <p>اختر نوع الكشف والتاريخ والوقت المناسب لك، وسيصلك تأكيد الحجز.</p>
                 </div>
-                <h2 class="h4 mb-3">
-                  <span class="text-amber">3.</span> التاريخ والوقت
-                </h2>
-                <div class="row g-3 mb-3">
-                  <div class="col-md-6">
-                    <label class="form-label" for="appointmentDate"
-                      >تاريخ الحجز</label
-                    ><input
-                      class="form-control"
-                      id="appointmentDate"
-                      type="date"
-                      name="date"
-                      required
-                    />
-                  </div>
-                </div>
-                <input
-                  type="hidden"
-                  name="from_time"
-                  id="timeSlot"
-                  value
-                /><input type="hidden" name="to_time" id="toTime" value />
-                <label class="form-label">الأوقات المتاحة</label>
-                <div class="slots-box mb-4" id="slotsBox" aria-live="polite">
-                  <div class="slots" id="slotData">
-                    <p class="mb-0 text-muted-2 w-100 text-center">
-                      اختر التاريخ لعرض الأوقات المتاحة.
-                    </p>
-                  </div>
-                </div>
-                <h2 class="h4 mb-3">
-                  <span class="text-amber">4.</span> طريقة الدفع
-                </h2>
-                <div
-                  class="choice-grid cols-3 mb-4"
-                  role="radiogroup"
-                  aria-label="طريقة الدفع"
-                >
-                  <div class="choice">
-                    <input
-                      type="radio"
-                      name="payment_method"
-                      id="pay0"
-                      value="0"
-                      checked
-                    /><label for="pay0"
-                      ><i class="bi bi-cash-coin"></i>Cash</label
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <form
+                                class="form-card"
+                                id="frontAppointmentBook"
+                                action="/front-appointment-book"
+                                method="post"
+                                novalidate
+                            >
+                                <input type="hidden" name="_token" value>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="1"
+                                    checked
+                                    hidden
+                                >
+                                <input
+                                    type="hidden"
+                                    name="doctor_id"
+                                    id="doctor_id"
+                                    value="1163"
+                                >
+                                <h2 class="h4 mb-4">
+                                    <span class="text-amber">1.</span>
+                                    بياناتك
+                                </h2>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="first_name">الاسم الأول
+                                        </label
                     >
-                  </div>
-                  <div class="choice">
-                    <input
-                      type="radio"
-                      name="payment_method"
-                      id="pay1"
-                      value="1"
-                    /><label for="pay1"
-                      ><i class="bi bi-phone"></i>Vodafone Cash</label
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            name="first_name"
+                                            id="first_name"
+                                            required
+                                            autocomplete="given-name"
+                                        >
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="last_name">اسم العائلة
+                                        </label
                     >
-                  </div>
-                  <div class="choice">
-                    <input
-                      type="radio"
-                      name="payment_method"
-                      id="pay2"
-                      value="2"
-                    /><label for="pay2"
-                      ><i class="bi bi-credit-card-2-front"></i>Instapay</label
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            name="last_name"
+                                            id="last_name"
+                                            required
+                                            autocomplete="family-name"
+                                        >
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="contact">رقم الهاتف
+                                        </label
                     >
-                  </div>
-                </div>
-                <div class="mb-4">
-                  <label class="form-label" for="description"
-                    >ملاحظات (اختياري)</label
-                  ><textarea
-                    class="form-control"
-                    name="description"
-                    id="description"
-                    rows="3"
-                    placeholder="اكتب أي معلومات تود إخبارنا بها"
-                  ></textarea>
-                </div>
-                <div
-                  id="successDiv"
-                  class="alert alert-success d-none"
-                  role="status"
-                ></div>
-                <div
-                  id="errorDiv"
-                  class="alert alert-danger d-none"
-                  role="alert"
-                ></div>
-                <div
-                  class="d-flex flex-wrap align-items-center justify-content-between gap-3"
-                >
-                  <p class="mb-0 small text-muted-2">
-                    <i class="bi bi-lock-fill me-1"></i> نحن ملتزمون بحماية
+                                        <input
+                                            type="tel"
+                                            class="form-control"
+                                            name="contact"
+                                            id="contact"
+                                            required
+                                            autocomplete="tel"
+                                            inputmode="tel"
+                                            dir="ltr"
+                                            placeholder="01XXXXXXXXX"
+                                        >
+                                    </div>
+                                </div>
+                                <h2 class="h4 mb-3">
+                                    <span class="text-amber">2.</span>
+                                    اختر طريقة الكشف
+                                </h2>
+                                <div class="choice-grid cols-4 mb-4" role="radiogroup" aria-label="طريقة الكشف">
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="branch_id"
+                                            id="branch1"
+                                            value="1"
+                                            checked
+                                        >
+                                        <label for="branch1">
+                                            <i class="bi bi-building"></i>موعد بالعيادة
+                                        </label
+                    >
+                                    </div>
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="branch_id"
+                                            id="branch2"
+                                            value="2"
+                                        >
+                                        <label for="branch2">
+                                            <i class="bi bi-house-heart"></i>زيارة منزلية
+                                        </label
+                    >
+                                    </div>
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="branch_id"
+                                            id="branch3"
+                                            value="3"
+                                        >
+                                        <label for="branch3">
+                                            <i class="bi bi-telephone"></i>مكالمة هاتفية
+                                        </label
+                    >
+                                    </div>
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="branch_id"
+                                            id="branch4"
+                                            value="4"
+                                        >
+                                        <label for="branch4">
+                                            <i class="bi bi-camera-video"></i>استشارة عبر زووم
+                                        </label
+                    >
+                                    </div>
+                                </div>
+                                <h2 class="h4 mb-3">
+                                    <span class="text-amber">3.</span>
+                                    التاريخ والوقت
+                                </h2>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="appointmentDate">تاريخ الحجز
+                                        </label
+                    >
+                                        <input
+                                            class="form-control"
+                                            id="appointmentDate"
+                                            type="date"
+                                            name="date"
+                                            required
+                                        >
+                                    </div>
+                                </div>
+                                <input
+                                    type="hidden"
+                                    name="from_time"
+                                    id="timeSlot"
+                                    value
+                                >
+                                <input
+                                    type="hidden"
+                                    name="to_time"
+                                    id="toTime"
+                                    value
+                                >
+                                <label class="form-label">الأوقات المتاحة</label>
+                                <div class="slots-box mb-4" id="slotsBox" aria-live="polite">
+                                    <div class="slots" id="slotData">
+                                        <p class="mb-0 text-muted-2 w-100 text-center">
+                                            اختر التاريخ لعرض الأوقات المتاحة.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hours-card mb-4">
+                                    <h3 class="h6 mb-3">
+                                        <i class="bi bi-clock-history me-2 text-amber"></i>مواعيد عمل العيادة
+                                    </h3>
+                                    <table class="table table-sm mb-2">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">السبت</th>
+                                                <td class="ltr">٣:٣٠ م</td>
+                                                <td class="text-center">–</td>
+                                                <td class="ltr">٦:٣٠ م</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">الأحد</th>
+                                                <td class="ltr">٦:٣٠ م</td>
+                                                <td class="text-center">–</td>
+                                                <td class="ltr">٩:٠٠ م</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">الاثنين</th>
+                                                <td class="ltr">٦:٣٠ م</td>
+                                                <td class="text-center">–</td>
+                                                <td class="ltr">٩:٠٠ م</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">الثلاثاء</th>
+                                                <td class="ltr">٣:٣٠ م</td>
+                                                <td class="text-center">–</td>
+                                                <td class="ltr">٦:٣٠ م</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">الأربعاء</th>
+                                                <td class="ltr">٦:٣٠ م</td>
+                                                <td class="text-center">–</td>
+                                                <td class="ltr">٩:٠٠ م</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">الخميس</th>
+                                                <td class="ltr">٤:٣٠ م</td>
+                                                <td class="text-center">–</td>
+                                                <td class="ltr">٧:٠٠ م</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">الجمعة</th>
+                                                <td class="ltr">٧:٠٠ م</td>
+                                                <td class="text-center">–</td>
+                                                <td class="ltr">٩:٠٠ م</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="small text-muted mb-0">اختر التاريخ بالأعلى لعرض الأوقات المتاحة للحجز بدقة.</p>
+                                </div>
+                                <h2 class="h4 mb-3">
+                                    <span class="text-amber">4.</span>
+                                    طريقة الدفع
+                                </h2>
+                                <div class="choice-grid cols-3 mb-4" role="radiogroup" aria-label="طريقة الدفع">
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="payment_method"
+                                            id="pay0"
+                                            value="0"
+                                            checked
+                                        >
+                                        <label for="pay0">
+                                            <i class="bi bi-cash-coin"></i>Cash
+                                        </label
+                    >
+                                    </div>
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="payment_method"
+                                            id="pay1"
+                                            value="1"
+                                        >
+                                        <label for="pay1">
+                                            <i class="bi bi-phone"></i>Vodafone Cash
+                                        </label
+                    >
+                                    </div>
+                                    <div class="choice">
+                                        <input
+                                            type="radio"
+                                            name="payment_method"
+                                            id="pay2"
+                                            value="2"
+                                        >
+                                        <label for="pay2">
+                                            <i class="bi bi-credit-card-2-front"></i>Instapay
+                                        </label
+                    >
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label" for="description">ملاحظات (اختياري)
+                                    </label
+                  >
+                                    <textarea
+                                        class="form-control"
+                                        name="description"
+                                        id="description"
+                                        rows="3"
+                                        placeholder="اكتب أي معلومات تود إخبارنا بها"
+                                    ></textarea>
+                                </div>
+                                <div id="successDiv" class="alert alert-success d-none" role="status"></div>
+                                <div id="errorDiv" class="alert alert-danger d-none" role="alert"></div>
+                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                    <p class="mb-0 small text-muted-2">
+                                        <i class="bi bi-lock-fill me-1"></i>
+                                        نحن ملتزمون بحماية
                     خصوصيتك. لن نجمع أي معلومات عنك بدون موافقتك الصريحة.
-                  </p>
-                  <button
-                    class="btn btn-primary btn-lg"
-                    type="submit"
-                    id="send_message"
+                                    </p>
+                                    <button class="btn btn-primary btn-lg" type="submit" id="send_message">
+                                        <i class="bi bi-calendar-check me-1"></i>
+                                        تأكيد الحجز
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="position-sticky" style="top: 100px">
+                                <aside class="aside-card mb-4 reveal">
+                                    <h3 class="mb-3">لماذا تحجز معنا؟</h3>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <i class="bi bi-patch-check-fill">
+                                            </i
+                      >
+                                            <span>طبيبة محترفة بخبرة أكثر من ٢٠ عامًا</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-hospital">
+                                            </i
+                      >
+                                            <span>نقبل التأمينات والنقابات</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-percent">
+                                            </i
+                      >
+                                            <span>خصم للأسرة وللمتابعة الشهرية</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-chat-heart">
+                                            </i
+                      >
+                                            <span>دعم المرضى والمتابعة المستمرة</span>
+                                        </li>
+                                    </ul>
+                                </aside>
+                                <aside class="card-soft p-4 h-auto reveal">
+                                    <h3 class="h5 mb-3">تفضل التواصل المباشر؟</h3>
+                                    <p class="text-muted-2">
+                                        لا تتردد في التواصل مع موظفي الاستقبال لأي استفسار طبي.
+                                    </p>
+                                    <a class="btn btn-primary w-100 mb-2" href="tel:+201113144573">
+                                        <i class="bi bi-telephone me-1"></i>
+                                        <span class="ltr">01113144573</span>
+                                    </a
                   >
-                    <i class="bi bi-calendar-check me-1"></i> تأكيد الحجز
-                  </button>
+                                    <a
+                                        class="btn btn-whatsapp w-100"
+                                        href="https://wa.me/201113144573"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        <i class="bi bi-whatsapp me-1"></i> واتساب
+                                    </a
+                  >
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </form>
-            </div>
-            <div class="col-lg-4">
-              <div class="position-sticky" style="top: 100px">
-                <aside class="aside-card mb-4 reveal">
-                  <h3 class="mb-3">لماذا تحجز معنا؟</h3>
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <i class="bi bi-patch-check-fill"></i
-                      ><span>طبيبة محترفة بخبرة أكثر من ٢٠ عامًا</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-hospital"></i
-                      ><span>نقبل التأمينات والنقابات</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-percent"></i
-                      ><span>خصم للأسرة وللمتابعة الشهرية</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chat-heart"></i
-                      ><span>دعم المرضى والمتابعة المستمرة</span>
-                    </li>
-                  </ul>
-                </aside>
-                <aside class="card-soft p-4 h-auto reveal">
-                  <h3 class="h5 mb-3">تفضل التواصل المباشر؟</h3>
-                  <p class="text-muted-2">
-                    لا تتردد في التواصل مع موظفي الاستقبال لأي استفسار طبي.
-                  </p>
-                  <a class="btn btn-primary w-100 mb-2" href="tel:+201113144573"
-                    ><i class="bi bi-telephone me-1"></i>
-                    <span class="ltr">01113144573</span></a
-                  >
-                  <a
-                    class="btn btn-whatsapp w-100"
-                    href="https://wa.me/201113144573"
-                    target="_blank"
-                    rel="noopener"
-                    ><i class="bi bi-whatsapp me-1"></i> واتساب</a
-                  >
-                </aside>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-5">
-            <a class="footer-logo mb-3" href="index.html"
-              ><img
-                src="assets/img/logo.webp"
-                alt="عيادة د. سهام سالم للصدر"
-                width="81"
-                height="54"
-                loading="lazy"
-            /></a>
-            <p class="mt-3 pe-lg-5">
-              عيادة متخصصة في أمراض الصدر والحساسية والدرن (السل)، بخبرة تزيد عن
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <a class="footer-logo mb-3" href="index.html">
+                            <img
+                                src="assets/img/logo.webp"
+                                alt="عيادة د. سهام سالم للصدر"
+                                width="81"
+                                height="54"
+                                loading="lazy"
+                            >
+                        </a>
+                        <p class="mt-3 pe-lg-5">
+                            عيادة متخصصة في أمراض الصدر والحساسية والدرن (السل)، بخبرة تزيد عن
               ٢٠ عامًا ورعاية تهتم بالتفاصيل.
-            </p>
-            <div class="social d-flex gap-2 mt-3">
-              <a
-                href="https://www.facebook.com/profile.php?id=61566491782382"
-                target="_blank"
-                rel="noopener"
-                aria-label="فيسبوك"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/dr_seham_chest"
-                target="_blank"
-                rel="noopener"
-                aria-label="إنستغرام"
-                ><i class="bi bi-instagram"></i
-              ></a>
-              <a
-                href="https://www.tiktok.com/@dr.seham.chest"
-                target="_blank"
-                rel="noopener"
-                aria-label="تيك توك"
-                ><i class="bi bi-tiktok"></i
-              ></a>
-              <a
-                href="https://www.youtube.com/@drsehammostafasalemchestclinic"
-                target="_blank"
-                rel="noopener"
-                aria-label="يوتيوب"
-                ><i class="bi bi-youtube"></i
-              ></a>
+                        </p>
+                        <div class="social d-flex gap-2 mt-3">
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61566491782382"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="فيسبوك"
+                            >
+                                <i class="bi bi-facebook">
+                                </i
+              >
+                            </a>
+                            <a
+                                href="https://www.instagram.com/dr_seham_chest"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="إنستغرام"
+                            >
+                                <i class="bi bi-instagram">
+                                </i
+              >
+                            </a>
+                            <a
+                                href="https://www.tiktok.com/@dr.seham.chest"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="تيك توك"
+                            >
+                                <i class="bi bi-tiktok">
+                                </i
+              >
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@drsehammostafasalemchestclinic"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="يوتيوب"
+                            >
+                                <i class="bi bi-youtube">
+                                </i
+              >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <h4>روابط سريعة</h4>
+                        <ul>
+                            <li>
+                                <a href="index.html">الرئيسية</a>
+                            </li>
+                            <li>
+                                <a href="services.html">الخدمات</a>
+                            </li>
+                            <li>
+                                <a href="articles.html">المقالات والشهادات</a>
+                            </li>
+                            <li>
+                                <a href="testimonials.html">آراء المرضى</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">اتصل بنا</a>
+                            </li>
+                            <li>
+                                <a href="appointment.html">حجز موعد</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <h4>تواصل معنا</h4>
+                        <ul>
+                            <li>
+                                <i class="bi bi-telephone me-2 text-amber">
+                                </i
+                >
+                                <a href="tel:+201113144573" class="ltr">+201113144573</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-whatsapp me-2 text-amber">
+                                </i
+                >
+                                <a href="https://wa.me/201113144573" target="_blank" rel="noopener">واتساب
+                                </a
+                >
+                            </li>
+                            <li>
+                                <i class="bi bi-geo-alt me-2 text-amber">
+                                </i
+                >
+                                <a href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6" target="_blank" rel="noopener">شارع عباس العقاد، المنطقة الأولى، مدينة نصر
+                                </a
+                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+                    <span>© 2026 د. سهام سالم — جميع الحقوق محفوظة</span>
+                </div>
             </div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <h4>روابط سريعة</h4>
-            <ul>
-              <li><a href="index.html">الرئيسية</a></li>
-              <li><a href="services.html">الخدمات</a></li>
-              <li><a href="testimonials.html">آراء المرضى</a></li>
-              <li><a href="contact.html">اتصل بنا</a></li>
-              <li><a href="appointment.html">حجز موعد</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-4">
-            <h4>تواصل معنا</h4>
-            <ul>
-              <li>
-                <i class="bi bi-telephone me-2 text-amber"></i
-                ><a href="tel:+201113144573" class="ltr">+201113144573</a>
-              </li>
-              <li>
-                <i class="bi bi-whatsapp me-2 text-amber"></i
-                ><a
-                  href="https://wa.me/201113144573"
-                  target="_blank"
-                  rel="noopener"
-                  >واتساب</a
-                >
-              </li>
-              <li>
-                <i class="bi bi-geo-alt me-2 text-amber"></i
-                ><a
-                  href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
-                  target="_blank"
-                  rel="noopener"
-                  >شارع عباس العقاد، المنطقة الأولى، مدينة نصر</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2"
-        >
-          <span>© 2026 د. سهام سالم — جميع الحقوق محفوظة</span>
-        </div>
-      </div>
-    </footer>
-    <div class="fab-stack">
-      <a
-        class="fab map"
-        href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
-        target="_blank"
-        rel="noopener"
-        aria-label="موقع العيادة على الخريطة"
-        ><i class="bi bi-geo-alt-fill"></i
-      ></a>
-      <a
-        class="fab wa"
-        href="https://wa.me/201113144573"
-        target="_blank"
-        rel="noopener"
-        aria-label="تواصل عبر واتساب"
-        ><i class="bi bi-whatsapp"></i
-      ></a>
-    </div>
-    <div class="mobile-cta">
-      <a class="btn btn-outline-primary" href="tel:+201113144573"
-        ><i class="bi bi-telephone me-1"></i> اتصال</a
+        </footer>
+        <div class="fab-stack">
+            <a
+                class="fab map"
+                href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
+                target="_blank"
+                rel="noopener"
+                aria-label="موقع العيادة على الخريطة"
+            >
+                <i class="bi bi-geo-alt-fill">
+                </i
       >
-      <a class="btn btn-primary" href="appointment.html"
-        ><i class="bi bi-calendar-check me-1"></i> احجز موعد</a
+            </a>
+            <a
+                class="fab wa"
+                href="https://wa.me/201113144573"
+                target="_blank"
+                rel="noopener"
+                aria-label="تواصل عبر واتساب"
+            >
+                <i class="bi bi-whatsapp">
+                </i
       >
-    </div>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/booking.js"></script>
-  </body>
+            </a>
+        </div>
+        <div class="mobile-cta">
+            <a class="btn btn-outline-primary" href="tel:+201113144573">
+                <i class="bi bi-telephone me-1"></i> اتصال
+            </a
+      >
+            <a class="btn btn-primary" href="appointment.html">
+                <i class="bi bi-calendar-check me-1"></i> احجز موعد
+            </a
+      >
+        </div>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/booking.js"></script>
+    </body>
 </html>

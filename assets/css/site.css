@@ -1480,3 +1480,182 @@ h3 {
     font-size: 0.85rem;
   }
 }
+
+/* ---- Articles & credentials page ---- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(26, 106, 85, 0.22);
+  background: #fff;
+  color: var(--clinic-green-800);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.chip:hover,
+.chip:focus-visible {
+  background: var(--clinic-green-700);
+  color: #fff;
+}
+
+.chip-solid {
+  background: var(--clinic-green-100);
+  border-color: transparent;
+}
+
+.article-card {
+  padding: 1.6rem 1.7rem;
+  height: auto;
+}
+
+.article-card:hover {
+  transform: none;
+}
+
+.article-card h3 {
+  font-size: 1.25rem;
+  margin: 1rem 0 0.75rem;
+}
+
+.article-card p,
+.article-list {
+  color: var(--clinic-muted);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.article-card p:last-child,
+.article-list:last-child {
+  margin-bottom: 0;
+}
+
+.article-list {
+  padding-inline-start: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.article-meta .icon-tile {
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 1.25rem;
+}
+
+.article-tag {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--clinic-amber-dark);
+  background: var(--clinic-amber-100);
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+}
+
+.article-disclaimer {
+  color: var(--clinic-muted);
+  font-size: 0.92rem;
+}
+
+.article-disclaimer .bi {
+  color: var(--clinic-amber-dark);
+  margin-inline-end: 0.3rem;
+}
+
+.review-gloss {
+  color: var(--clinic-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: -0.4rem;
+}
+
+#credentials,
+#articles,
+#reviews,
+.article-card {
+  scroll-margin-top: 90px;
+}
+
+.cert-fig {
+  margin: 0;
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cert-fig:hover {
+  transform: none;
+}
+
+.cert-btn {
+  display: block;
+  padding: 0;
+  border: 1px solid var(--clinic-line);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: #fff;
+  cursor: zoom-in;
+}
+
+.cert-btn img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cert-btn:focus-visible {
+  outline: 2px solid var(--clinic-green-700);
+  outline-offset: 2px;
+}
+
+.cert-fig figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.95rem;
+  color: var(--clinic-muted);
+  line-height: 1.6;
+}
+
+.cert-fig figcaption strong {
+  color: var(--clinic-ink);
+}
+
+.hours-card {
+  background: var(--clinic-green-50);
+  border: 1px solid var(--clinic-line);
+  border-radius: var(--bs-border-radius-lg);
+  padding: 1.1rem 1.3rem;
+}
+
+.hours-card th {
+  font-weight: 700;
+}
+
+.hours-card table {
+  --bs-table-bg: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.hours-card table {
+  width: auto;
+  min-width: min(100%, 24rem);
+}
+
+.hours-card th,
+.hours-card td {
+  padding: 0.3rem 1.1rem;
+  white-space: nowrap;
+}
