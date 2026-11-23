@@ -83,9 +83,9 @@
     U+FFFD;
 }
 
-:root {
+:root { 
   --clinic-green-900: #0d3a30;
-  --clinic-green-800: #12493c;
+  --clinic-green-800: #12493c; 
   --clinic-green-700: #1a6a55;
   --clinic-green-500: #2f9a7a;
   --clinic-green-100: #e4f1ec;
