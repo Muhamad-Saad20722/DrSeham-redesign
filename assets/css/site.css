@@ -84,8 +84,8 @@
 }
 
 :root {
-  --clinic-green-900: #0d3a30;
-  --clinic-green-800: #12493c;
+  --clinic-green-900: #adebb3;
+  --clinic-green-800: #adebb3;
   --clinic-green-700: #1a6a55;
   --clinic-green-500: #2f9a7a;
   --clinic-green-100: #e4f1ec;
@@ -102,7 +102,7 @@
   --bs-primary-rgb: 26, 106, 85;
   --bs-link-color: #1a6a55;
   --bs-link-color-rgb: 26, 106, 85;
-  --bs-link-hover-color: #0d3a30;
+  --bs-link-hover-color: #adebb3;
   --bs-body-font-family:
     "Cairo", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
   --bs-body-color: #18261f;
@@ -999,7 +999,7 @@ a {
   border-radius: 1.1rem;
   overflow: hidden;
   aspect-ratio: 16/10;
-  background: #0d3a30;
+  background: #adebb3;
   border: 0;
   width: 100%;
   padding: 0;
