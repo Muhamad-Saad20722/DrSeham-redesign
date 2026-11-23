@@ -1,5 +1,5 @@
 /* Appointment booking — same endpoints and field names as the original site.
- * Set window.CLINIC_API_BASE (e.g. "https://drsehamsalemchestclinic.com") before this script
+ * Set window.CLINIC_API_BASE (e.g. "https://drsehamsalem.com") before this script
  * if the pages are not served from the same origin as the Laravel backend. */
 (function () {
   "use strict";
