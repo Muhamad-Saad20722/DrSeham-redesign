@@ -1,6 +1,7 @@
 <!--
 title: اتصل بنا | عيادة د. سهام سالم للصدر
 description: تواصل مع عيادة د. سهام سالم للصدر بمدينة نصر عبر الهاتف أو واتساب أو احجز موعدًا أونلاين.
+scripts: contact.js
 -->
 <main id="main">
       <section class="page-hero">
@@ -137,8 +138,6 @@ description: تواصل مع عيادة د. سهام سالم للصدر بمد�
             <div class="col-lg-6 reveal">
               <form
                 class="form-card"
-                method="POST"
-                action="/enquiries"
                 id="enquiryForm"
               >
                 <h2 class="h4 mb-4">أرسل لنا رسالة</h2>
@@ -191,6 +190,7 @@ description: تواصل مع عيادة د. سهام سالم للصدر بمد�
                     required
                   ></textarea>
                 </div>
+                <div class="alert alert-danger d-none" id="enquiryError" role="alert"></div>
                 <button class="btn btn-primary btn-lg" type="submit">
                   <i class="bi bi-send me-1"></i>
                   إرسال الرسالة

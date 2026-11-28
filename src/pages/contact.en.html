@@ -1,6 +1,7 @@
 <!--
 title: Contact Us | Dr. Seham Salem Chest Clinic
 description: Contact Dr. Seham Salem's chest clinic in Nasr City by phone or WhatsApp, or book an appointment online.
+scripts: contact.js
 -->
 <main id="main">
       <section class="page-hero">
@@ -135,10 +136,8 @@ description: Contact Dr. Seham Salem's chest clinic in Nasr City by phone or Wha
             </div>
             <div class="col-lg-6 reveal">
               <form
-                action="/enquiries"
                 class="form-card"
                 id="enquiryForm"
-                method="POST"
               >
                 <h2 class="h4 mb-4">Send us a message</h2>
                 <div class="mb-3">
@@ -188,6 +187,7 @@ description: Contact Dr. Seham Salem's chest clinic in Nasr City by phone or Wha
                     rows="4"
                   ></textarea>
                 </div>
+                <div class="alert alert-danger d-none" id="enquiryError" role="alert"></div>
                 <button class="btn btn-primary btn-lg" type="submit">
                   <i class="bi bi-send me-1"></i> Send message
                 </button>

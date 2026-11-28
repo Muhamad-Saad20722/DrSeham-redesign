@@ -119,7 +119,7 @@ The website currently uses the clinic details for:
 ## Notes
 
 - The project is static and does not require a backend for basic site display.
-- The appointment form sends the request through WhatsApp. The contact form still posts to `/enquiries` (no backend in this project), so it needs a real endpoint or a WhatsApp handler.
+- The appointment form sends the request through WhatsApp. The contact form also sends through WhatsApp (`assets/js/contact.js`).
 - Arabic and English pages are generated from `src/` (see Build).
 - Language: visitors are never auto-redirected; if they previously chose the other language a small dismissible suggestion bar is shown.
 
