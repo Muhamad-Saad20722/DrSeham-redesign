@@ -311,7 +311,7 @@
       // Prepare WhatsApp message
       const message = isEnglish
         ? [
-            " New Appointment Booking Request ",
+            "** New Appointment Booking Request **",
             "",
             " Name:  " + firstName + " " + lastName,
             "",
@@ -336,7 +336,7 @@
             notes || "No additional notes",
           ].join("\n")
         : [
-            " طلب حجز موعد جديد ",
+            "** طلب حجز موعد جديد **",
             "",
             " الاسم:  " + firstName + " " + lastName,
             "",
