@@ -23,7 +23,9 @@ This website is built as a lightweight static HTML/CSS/JS project with Arabic an
 
 ```text
 DrSeham-redesign/
-├── index.html                  # Arabic homepage
+├── build.py                    # static site generator (python build.py)
+├── src/                        # layout, i18n strings, page sources
+├── index.html                  # Arabic homepage (generated)
 ├── services.html               # Arabic services page
 ├── articles.html               # Arabic medical articles page
 ├── testimonials.html           # Arabic testimonials page
@@ -58,21 +60,49 @@ DrSeham-redesign/
 
 Because this is a static website, you can run it locally without a framework.
 
-### Open directly
+### Run a local server
 
-Open any of the HTML files directly in a browser, for example:
+The testimonials page loads `assets/data/reviews.json` with `fetch()`, so serve the folder over HTTP
+(opening the file directly via `file://` will not load the reviews):
 
-- `index.html`
-- `services.html`
-- `contact.html`
+```bash
+python -m http.server 8000   # then open http://localhost:8000
+```
 
+## Adding a patient review
+
+Edit `assets/data/reviews.json` and add one line, the page builds the cards automatically (AR + EN):
+
+```json
+{"name": "اسم ا.", "text": "نص الرأي", "rating": 5}
+```
+
+`rating` is optional (default 5, range 1-5). The avatar letter is taken from the first letter of `name`.
+
+
+## Build (templates)
+
+The 12 HTML pages and `sitemap.xml` are **generated** from `src/` by a dependency-free Python script
+(Python 3.8+). Do not edit the generated `*.html` files by hand; edit the sources and rebuild:
+
+```bash
+python build.py          # regenerate pages + sitemap.xml
+python build.py --check  # CI-friendly: fails if the generated files are out of date
+```
+
+| What to change | Where |
+| --- | --- |
+| Header, footer, floating buttons, `<head>` | `src/layout.html` |
+| Shared texts (menu, footer, labels) in AR / EN | `src/i18n.json` |
+| Page content (title, description, body) | `src/pages/<page>.<ar\|en>.html` |
+| Add a page to menu/sitemap | `src/pages.json` + `src/i18n.json` (`nav`) |
+
+`sitemap.xml` `<lastmod>` is automatic: `src/lastmod.json` remembers a hash of each page and only
+bumps the date for pages whose generated output changed.
 
 ## Content Editing
 
-The generated HTML pages can be edited directly:
-
-- The root HTML files for Arabic content
-- `en/*.html` for English content
+- Page content: `src/pages/*.html` (then run `python build.py`)
 - `assets/img/` for clinic images and branding assets
 - `assets/css/site.css` for custom styling
 - `assets/js/` for interactive and booking behavior
@@ -89,8 +119,9 @@ The website currently uses the clinic details for:
 ## Notes
 
 - The project is static and does not require a backend for basic site display.
-- The appointment and contact forms are front-end UI placeholders and may need integration with a backend or third-party service.
-- Arabic and English pages are maintained as static HTML files.
+- The appointment form sends the request through WhatsApp. The contact form still posts to `/enquiries` (no backend in this project), so it needs a real endpoint or a WhatsApp handler.
+- Arabic and English pages are generated from `src/` (see Build).
+- Language: visitors are never auto-redirected; if they previously chose the other language a small dismissible suggestion bar is shown.
 
 ## Recommended Next Improvements
 

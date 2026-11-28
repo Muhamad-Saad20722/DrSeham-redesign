@@ -1,0 +1,92 @@
+<!--
+title: Patient Reviews | Dr. Seham Salem Chest Clinic
+description: Read Dr. Seham Salem's patient reviews: 722+ ratings averaging 4.98 out of 5.
+scripts: reviews.js
+-->
+<main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li aria-current="page" class="breadcrumb-item active">
+                Patient Reviews
+              </li>
+            </ol>
+          </nav>
+          <h1>Patient Reviews</h1>
+          <p>More than 10,000 patients trust Dr. Seham Salem's care.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="row g-4 mb-5 align-items-center reveal">
+            <div class="col-lg-4">
+              <div class="reviews-score text-center">
+                <div class="big">4.98</div>
+                <div class="rating-stars my-2 fs-5">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="text-white-50">
+                  722+ ratings &mdash; 98% positive feedback
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <h2 class="section-title">Trust built over years</h2>
+              <p class="lead-sm mb-0">
+                We value every word from our patients, and here are some of the
+                reviews we received.
+              </p>
+            </div>
+          </div>
+          <p class="small text-muted mb-4">
+            Reviews are shown in their original language (Arabic).
+          </p>
+          <div class="masonry" id="reviewsList" data-src="{{root}}assets/data/reviews.json" aria-busy="true"></div>
+        </div>
+      </section>
+      <section class="section pt-0">
+        <div class="container">
+          <div class="cta-band">
+            <div
+              class="row align-items-center g-4 position-relative"
+              style="z-index: 1"
+            >
+              <div class="col-lg-8">
+                <h2 class="h1 fs-2 mb-2">
+                  Your lung health starts with one appointment
+                </h2>
+                <p class="mb-0 fs-5">
+                  Book a clinic visit, a home visit or a remote consultation
+                  &mdash; at a time that suits you.
+                </p>
+              </div>
+              <div
+                class="col-lg-4 d-flex flex-wrap gap-2 justify-content-lg-end"
+              >
+                <a class="btn btn-amber btn-lg" href="appointment.html">
+                  <i class="bi bi-calendar-check me-1"></i>
+                  Book now
+                </a>
+                <a
+                  class="btn btn-outline-light-2 btn-lg"
+                  href="https://wa.me/201113144573"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <i class="bi bi-whatsapp me-1"></i>
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>

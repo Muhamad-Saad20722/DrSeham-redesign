@@ -1,0 +1,26 @@
+{
+  "index": {
+    "hash": "cfcc5d3ab5599bd7f5c9d14411bbf62a0f61c946014ff069a0cc0cd4894fc71c",
+    "lastmod": "2026-11-28"
+  },
+  "services": {
+    "hash": "9f2447b083ddda5a2fa0614e49aedef7e08a09c4f8d2bd7806fd0aa9753638e3",
+    "lastmod": "2026-11-28"
+  },
+  "articles": {
+    "hash": "3c7d29d268fa01a172f863e9008cf46a6fb466d177bd72c542a22e329c1c956a",
+    "lastmod": "2026-11-28"
+  },
+  "testimonials": {
+    "hash": "a90b8152dbd6ee840b5afd56a80c0c6ef2f0a159024635105336390ccd3990d4",
+    "lastmod": "2026-11-28"
+  },
+  "contact": {
+    "hash": "4638b63319cc65efc6943e4f54235ea371d2712a7a7ed29fb32ae66b9df2c75a",
+    "lastmod": "2026-11-28"
+  },
+  "appointment": {
+    "hash": "a6f6b024ce8d8bbd8d4ecc4fa10539da0d1229f8db3b2ef2c4b7087b7a4d2e39",
+    "lastmod": "2026-11-28"
+  }
+}

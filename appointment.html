@@ -2,62 +2,22 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8" />
-    <script id="lang-redirect">
-      try {
-        if (
-          localStorage.getItem("clinic-lang") === "en" &&
-          !/[?&]lang=ar/.test(location.search)
-        ) {
-          location.replace(
-            "en/" +
-              (location.pathname.split("/").pop() || "index.html") +
-              location.search +
-              location.hash,
-          );
-        }
-      } catch (e) {}
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>حجز موعد | عيادة د. سهام سالم للصدر</title>
-    <meta
-      name="description"
-      content="احجز موعدًا مع د. سهام سالم: كشف بالعيادة، زيارة منزلية، مكالمة هاتفية أو استشارة عبر زوم."
-    />
+    <meta name="description" content="احجز موعدًا مع د. سهام سالم: كشف بالعيادة، زيارة منزلية، مكالمة هاتفية أو استشارة عبر زوم." />
     <meta name="theme-color" content="#adebb3" />
     <meta name="author" content="SoftwareSolutions" />
-    <meta name="csrf-token" content />
     <meta property="og:title" content="حجز موعد | عيادة د. سهام سالم للصدر" />
-    <meta
-      property="og:description"
-      content="احجز موعدًا مع د. سهام سالم: كشف بالعيادة، زيارة منزلية، مكالمة هاتفية أو استشارة عبر زوم."
-    />
+    <meta property="og:description" content="احجز موعدًا مع د. سهام سالم: كشف بالعيادة، زيارة منزلية، مكالمة هاتفية أو استشارة عبر زوم." />
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://drsehamsalem.com/appointment.html" />
-    <link
-      rel="alternate"
-      hreflang="ar"
-      href="https://drsehamsalem.com/appointment.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://drsehamsalem.com/en/appointment.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://drsehamsalem.com/appointment.html"
-    />
-    <meta
-      property="og:url"
-      content="https://drsehamsalem.com/appointment.html"
-    />
+    <link rel="alternate" hreflang="ar" href="https://drsehamsalem.com/appointment.html" />
+    <link rel="alternate" hreflang="en" href="https://drsehamsalem.com/en/appointment.html" />
+    <link rel="alternate" hreflang="x-default" href="https://drsehamsalem.com/appointment.html" />
+    <meta property="og:url" content="https://drsehamsalem.com/appointment.html" />
     <meta property="og:locale" content="ar_EG" />
     <meta property="og:site_name" content="عيادة د. سهام سالم للصدر" />
-    <meta
-      property="og:image"
-      content="https://drsehamsalem.com/assets/img/doctor.webp"
-    />
+    <meta property="og:image" content="https://drsehamsalem.com/assets/img/doctor.webp" />
     <link rel="icon" href="assets/img/favicon.png" />
     <link rel="apple-touch-icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
@@ -76,26 +36,20 @@
         </span>
         <span class="d-flex gap-4">
           <a href="tel:+201113144573">
-            <i class="bi bi-telephone"> </i>
+            <i class="bi bi-telephone"></i>
             <span class="ltr">01113144573</span>
           </a>
           <a href="https://wa.me/201113144573" target="_blank" rel="noopener">
-            <i class="bi bi-whatsapp"></i>واتساب
+            <i class="bi bi-whatsapp"></i>
+            واتساب
           </a>
         </span>
       </div>
     </div>
     <header class="sticky-top">
-      <nav
-        class="navbar navbar-expand-lg site-nav"
-        aria-label="القائمة الرئيسية"
-      >
+      <nav class="navbar navbar-expand-lg site-nav" aria-label="القائمة الرئيسية">
         <div class="container">
-          <a
-            class="navbar-brand"
-            href="index.html"
-            aria-label="د. سهام سالم - عيادة الصدر"
-          >
+          <a class="navbar-brand" href="index.html" aria-label="د. سهام سالم - عيادة الصدر">
             <img
               src="assets/img/logo.webp"
               alt="شعار عيادة د. سهام سالم للصدر"
@@ -104,22 +58,8 @@
             />
           </a>
           <div class="lang-toggle order-lg-3" role="group" aria-label="اللغة">
-            <a
-              href="appointment.html"
-              class="active"
-              lang="ar"
-              hreflang="ar"
-              data-lang-switch="ar"
-              aria-current="true"
-              >عربي
-            </a>
-            <a
-              href="en/appointment.html"
-              lang="en"
-              hreflang="en"
-              data-lang-switch="en"
-              >EN
-            </a>
+            <a href="appointment.html" class="active" aria-current="true" lang="ar" hreflang="ar" data-lang-switch="ar">عربي</a>
+            <a href="en/appointment.html" lang="en" hreflang="en" data-lang-switch="en">EN</a>
           </div>
           <button
             class="navbar-toggler"
@@ -134,24 +74,15 @@
           </button>
           <div class="collapse navbar-collapse" id="nav">
             <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-1">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">الرئيسية</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">الخدمات</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="articles.html">المقالات والشهادات</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="testimonials.html">آراء المرضى</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">اتصل بنا</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">الخدمات</a></li>
+              <li class="nav-item"><a class="nav-link" href="articles.html">المقالات والشهادات</a></li>
+              <li class="nav-item"><a class="nav-link" href="testimonials.html">آراء المرضى</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
             </ul>
             <a class="btn btn-primary" href="appointment.html">
-              <i class="bi bi-calendar-check me-1"></i> احجز موعدك
+              <i class="bi bi-calendar-check me-1"></i>
+              احجز موعدك
             </a>
           </div>
         </div>
@@ -185,7 +116,6 @@
                 method="post"
                 novalidate
               >
-                <input type="hidden" name="_token" value />
                 <input type="radio" name="gender" value="1" checked hidden />
                 <input
                   type="hidden"
@@ -527,91 +457,40 @@
                 loading="lazy"
               />
             </a>
-            <p class="mt-3 pe-lg-5">
-              عيادة متخصصة في أمراض الصدر والحساسية والدرن (السل)، بخبرة تزيد عن
-              ٢٠ عامًا ورعاية تهتم بالتفاصيل.
-            </p>
+            <p class="mt-3 pe-lg-5">عيادة متخصصة في أمراض الصدر والحساسية والدرن (السل)، بخبرة تزيد عن ٢٠ عامًا ورعاية تهتم بالتفاصيل.</p>
             <div class="social d-flex gap-2 mt-3">
-              <a
-                href="https://www.facebook.com/profile.php?id=61566491782382"
-                target="_blank"
-                rel="noopener"
-                aria-label="فيسبوك"
-              >
-                <i class="bi bi-facebook"> </i>
-              </a>
-              <a
-                href="https://www.instagram.com/dr_seham_chest"
-                target="_blank"
-                rel="noopener"
-                aria-label="إنستغرام"
-              >
-                <i class="bi bi-instagram"> </i>
-              </a>
-              <a
-                href="https://www.tiktok.com/@dr.seham.chest"
-                target="_blank"
-                rel="noopener"
-                aria-label="تيك توك"
-              >
-                <i class="bi bi-tiktok"> </i>
-              </a>
-              <a
-                href="https://www.youtube.com/@drsehammostafasalemchestclinic"
-                target="_blank"
-                rel="noopener"
-                aria-label="يوتيوب"
-              >
-                <i class="bi bi-youtube"> </i>
-              </a>
+              <a href="https://www.facebook.com/profile.php?id=61566491782382" target="_blank" rel="noopener" aria-label="فيسبوك"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/dr_seham_chest" target="_blank" rel="noopener" aria-label="إنستغرام"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.tiktok.com/@dr.seham.chest" target="_blank" rel="noopener" aria-label="تيك توك"><i class="bi bi-tiktok"></i></a>
+              <a href="https://www.youtube.com/@drsehammostafasalemchestclinic" target="_blank" rel="noopener" aria-label="يوتيوب"><i class="bi bi-youtube"></i></a>
             </div>
           </div>
           <div class="col-6 col-lg-3">
             <h4>روابط سريعة</h4>
             <ul>
-              <li>
-                <a href="index.html">الرئيسية</a>
-              </li>
-              <li>
-                <a href="services.html">الخدمات</a>
-              </li>
-              <li>
-                <a href="articles.html">المقالات والشهادات</a>
-              </li>
-              <li>
-                <a href="testimonials.html">آراء المرضى</a>
-              </li>
-              <li>
-                <a href="contact.html">اتصل بنا</a>
-              </li>
-              <li>
-                <a href="appointment.html">حجز موعد</a>
-              </li>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="services.html">الخدمات</a></li>
+              <li><a href="articles.html">المقالات والشهادات</a></li>
+              <li><a href="testimonials.html">آراء المرضى</a></li>
+              <li><a href="contact.html">اتصل بنا</a></li>
+              <li><a href="appointment.html">حجز موعد</a></li>
             </ul>
           </div>
           <div class="col-6 col-lg-4">
             <h4>تواصل معنا</h4>
             <ul>
               <li>
-                <i class="bi bi-telephone me-2 text-amber"> </i>
+                <i class="bi bi-telephone me-2 text-amber"></i>
                 <a href="tel:+201113144573" class="ltr">+201113144573</a>
               </li>
               <li>
-                <i class="bi bi-whatsapp me-2 text-amber"> </i>
-                <a
-                  href="https://wa.me/201113144573"
-                  target="_blank"
-                  rel="noopener"
-                  >واتساب
-                </a>
+                <i class="bi bi-whatsapp me-2 text-amber"></i>
+                <a href="https://wa.me/201113144573" target="_blank" rel="noopener">واتساب</a>
               </li>
               <li>
-                <i class="bi bi-geo-alt me-2 text-amber"> </i>
-                <a
-                  href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
-                  target="_blank"
-                  rel="noopener"
-                  >شارع عباس العقاد، المنطقة الأولى، مدينة نصر
+                <i class="bi bi-geo-alt me-2 text-amber"></i>
+                <a href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6" target="_blank" rel="noopener">
+                  شارع عباس العقاد، المنطقة الأولى، مدينة نصر
                 </a>
               </li>
             </ul>
@@ -625,31 +504,21 @@
       </div>
     </footer>
     <div class="fab-stack">
-      <a
-        class="fab map"
-        href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
-        target="_blank"
-        rel="noopener"
-        aria-label="موقع العيادة على الخريطة"
-      >
-        <i class="bi bi-geo-alt-fill"> </i>
+      <a class="fab map" href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6" target="_blank" rel="noopener" aria-label="موقع العيادة على الخريطة">
+        <i class="bi bi-geo-alt-fill"></i>
       </a>
-      <a
-        class="fab wa"
-        href="https://wa.me/201113144573"
-        target="_blank"
-        rel="noopener"
-        aria-label="تواصل عبر واتساب"
-      >
-        <i class="bi bi-whatsapp"> </i>
+      <a class="fab wa" href="https://wa.me/201113144573" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+        <i class="bi bi-whatsapp"></i>
       </a>
     </div>
     <div class="mobile-cta">
       <a class="btn btn-outline-primary" href="tel:+201113144573">
-        <i class="bi bi-telephone me-1"></i> اتصال
+        <i class="bi bi-telephone me-1"></i>
+        اتصال
       </a>
       <a class="btn btn-primary" href="appointment.html">
-        <i class="bi bi-calendar-check me-1"></i> احجز موعد
+        <i class="bi bi-calendar-check me-1"></i>
+        احجز موعد
       </a>
     </div>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

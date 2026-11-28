@@ -1704,3 +1704,36 @@ h3 {
 .page-hero .eyebrow {
   color: var(--clinic-amber-on-mint) !important;
 }
+
+/* Language suggestion bar (shown when the visitor previously chose the other language) */
+.lang-suggest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 0.5rem 2.5rem;
+  background: var(--clinic-green-100);
+  color: var(--clinic-green-700);
+  font-size: 0.95rem;
+  position: relative;
+}
+
+.lang-suggest a {
+  font-weight: 700;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.lang-suggest-close {
+  position: absolute;
+  inset-inline-end: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}

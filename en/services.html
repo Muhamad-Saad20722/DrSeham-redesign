@@ -1,113 +1,94 @@
 <!doctype html>
-<html dir="ltr" lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <script id="lang-redirect">
-    try {
-      if (
-        localStorage.getItem("clinic-lang") === "ar" &&
-        !/[?&]lang=en/.test(location.search)
-      ) {
-        location.replace(
-          "../" +
-          (location.pathname.split("/").pop() || "index.html") +
-          location.search +
-          location.hash,
-        );
-      }
-    } catch (e) { }
-  </script>
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>Services | Dr. Seham Salem Chest Clinic</title>
-  <meta
-    content="All services at Dr. Seham Salem's clinic: asthma, allergy, tuberculosis (TB), COPD, sleep disorders, children from 6 months and more."
-    name="description" />
-  <meta content="#adebb3" name="theme-color" />
-  <meta content="SoftwareSolutions" name="author" />
-  <meta content name="csrf-token" />
-  <meta content="Services | Dr. Seham Salem Chest Clinic" property="og:title" />
-  <meta
-    content="All services at Dr. Seham Salem's clinic: asthma, allergy, tuberculosis (TB), COPD, sleep disorders, children from 6 months and more."
-    property="og:description" />
-  <meta content="website" property="og:type" />
-  <link rel="canonical" href="https://drsehamsalem.com/en/services.html" />
-  <link rel="alternate" hreflang="ar" href="https://drsehamsalem.com/services.html" />
-  <link rel="alternate" hreflang="en" href="https://drsehamsalem.com/en/services.html" />
-  <link rel="alternate" hreflang="x-default" href="https://drsehamsalem.com/services.html" />
-  <meta property="og:url" content="https://drsehamsalem.com/en/services.html" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="Dr. Seham Salem Chest Clinic" />
-  <meta property="og:image" content="https://drsehamsalem.com/assets/img/doctor.webp" />
-  <link href="../assets/img/favicon.png" rel="icon" />
-  <link href="../assets/img/favicon.png" rel="apple-touch-icon" />
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/css/bootstrap-icons.min.css" rel="stylesheet" />
-  <link href="../assets/css/site.css" rel="stylesheet" />
-</head>
-
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="topbar d-none d-lg-block">
-    <div class="container d-flex justify-content-between align-items-center py-2">
-      <span>
-        <i class="bi bi-geo-alt"></i>
-        Abbas El-Akkad Street, First District, Nasr City
-      </span>
-      <span class="d-flex gap-4">
-        <a href="tel:+201113144573">
-          <i class="bi bi-telephone"></i>
-          <span class="ltr">01113144573</span>
-        </a>
-        <a href="https://wa.me/201113144573" rel="noopener" target="_blank">
-          <i class="bi bi-whatsapp"></i>
-          WhatsApp
-        </a>
-      </span>
-    </div>
-  </div>
-  <header class="sticky-top">
-    <nav aria-label="Main menu" class="navbar navbar-expand-lg site-nav">
-      <div class="container">
-        <a aria-label="Dr. Seham Salem &ndash; Chest Clinic" class="navbar-brand" href="index.html">
-          <img alt="Dr. Seham Salem Chest Clinic logo" height="52" src="../assets/img/logo.webp" width="78" />
-        </a>
-        <div aria-label="Language" class="lang-toggle order-lg-3" role="group">
-          <a data-lang-switch="ar" href="../services.html" hreflang="ar" lang="ar">عربي</a>
-          <a aria-current="true" class="active" data-lang-switch="en" href="services.html" hreflang="en"
-            lang="en">EN</a>
-        </div>
-        <button aria-controls="nav" aria-expanded="false" aria-label="Open menu" class="navbar-toggler"
-          data-bs-target="#nav" data-bs-toggle="collapse" type="button">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-1">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a aria-current="page" class="nav-link active" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="articles.html">Articles & Credentials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="testimonials.html">Patient Reviews</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html"> Contact Us </a>
-            </li>
-          </ul>
-          <a class="btn btn-primary" href="appointment.html">
-            <i class="bi bi-calendar-check me-1"></i>
-            Book Your Appointment
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services | Dr. Seham Salem Chest Clinic</title>
+    <meta name="description" content="All services at Dr. Seham Salem&#x27;s clinic: asthma, allergy, tuberculosis (TB), COPD, sleep disorders, children from 6 months and more." />
+    <meta name="theme-color" content="#adebb3" />
+    <meta name="author" content="SoftwareSolutions" />
+    <meta property="og:title" content="Services | Dr. Seham Salem Chest Clinic" />
+    <meta property="og:description" content="All services at Dr. Seham Salem&#x27;s clinic: asthma, allergy, tuberculosis (TB), COPD, sleep disorders, children from 6 months and more." />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://drsehamsalem.com/en/services.html" />
+    <link rel="alternate" hreflang="ar" href="https://drsehamsalem.com/services.html" />
+    <link rel="alternate" hreflang="en" href="https://drsehamsalem.com/en/services.html" />
+    <link rel="alternate" hreflang="x-default" href="https://drsehamsalem.com/services.html" />
+    <meta property="og:url" content="https://drsehamsalem.com/en/services.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Dr. Seham Salem Chest Clinic" />
+    <meta property="og:image" content="https://drsehamsalem.com/assets/img/doctor.webp" />
+    <link rel="icon" href="../assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="../assets/img/favicon.png" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="topbar d-none d-lg-block">
+      <div
+        class="container d-flex justify-content-between align-items-center py-2"
+      >
+        <span>
+          <i class="bi bi-geo-alt"></i>
+          Abbas El-Akkad Street, First District, Nasr City
+        </span>
+        <span class="d-flex gap-4">
+          <a href="tel:+201113144573">
+            <i class="bi bi-telephone"></i>
+            <span class="ltr">01113144573</span>
           </a>
-        </div>
+          <a href="https://wa.me/201113144573" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp"></i>
+            WhatsApp
+          </a>
+        </span>
       </div>
-    </nav>
-  </header>
-  <main id="main">
+    </div>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg site-nav" aria-label="Main menu">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" aria-label="Dr. Seham Salem – Chest Clinic">
+            <img
+              src="../assets/img/logo.webp"
+              alt="Dr. Seham Salem Chest Clinic logo"
+              width="78"
+              height="52"
+            />
+          </a>
+          <div class="lang-toggle order-lg-3" role="group" aria-label="Language">
+            <a href="../services.html" lang="ar" hreflang="ar" data-lang-switch="ar">عربي</a>
+            <a href="services.html" class="active" aria-current="true" lang="en" hreflang="en" data-lang-switch="en">EN</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-expanded="false"
+            aria-label="Open menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-1">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="services.html" aria-current="page">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="articles.html">Articles & Credentials</a></li>
+              <li class="nav-item"><a class="nav-link" href="testimonials.html">Patient Reviews</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+            <a class="btn btn-primary" href="appointment.html">
+              <i class="bi bi-calendar-check me-1"></i>
+              Book Your Appointment
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
     <section class="page-hero">
       <div class="container">
         <nav aria-label="Breadcrumb">
@@ -540,106 +521,84 @@
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-5">
-          <a class="footer-logo mb-3" href="index.html">
-            <img alt="Dr. Seham Salem Chest Clinic" height="54" loading="lazy" src="../assets/img/logo.webp"
-              width="81" />
-          </a>
-          <p class="mt-3 pe-lg-5">
-            A clinic specializing in chest diseases, allergy and tuberculosis
-            (TB), with more than 20 years of experience and care that pays
-            attention to detail.
-          </p>
-          <div class="social d-flex gap-2 mt-3">
-            <a aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61566491782382" rel="noopener"
-              target="_blank">
-              <i class="bi bi-facebook"></i>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <a class="footer-logo mb-3" href="index.html">
+              <img
+                src="../assets/img/logo.webp"
+                alt="Dr. Seham Salem Chest Clinic"
+                width="81"
+                height="54"
+                loading="lazy"
+              />
             </a>
-            <a aria-label="Instagram" href="https://www.instagram.com/dr_seham_chest" rel="noopener" target="_blank">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a aria-label="TikTok" href="https://www.tiktok.com/@dr.seham.chest" rel="noopener" target="_blank">
-              <i class="bi bi-tiktok"></i>
-            </a>
-            <a aria-label="YouTube" href="https://www.youtube.com/@drsehammostafasalemchestclinic" rel="noopener"
-              target="_blank">
-              <i class="bi bi-youtube"></i>
-            </a>
+            <p class="mt-3 pe-lg-5">A clinic specializing in chest diseases, allergy and tuberculosis (TB), with more than 20 years of experience and care that pays attention to detail.</p>
+            <div class="social d-flex gap-2 mt-3">
+              <a href="https://www.facebook.com/profile.php?id=61566491782382" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/dr_seham_chest" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.tiktok.com/@dr.seham.chest" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+              <a href="https://www.youtube.com/@drsehammostafasalemchestclinic" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="articles.html">Articles & Credentials</a></li>
+              <li><a href="testimonials.html">Patient Reviews</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="appointment.html">Book an appointment</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-4">
+            <h4>Contact us</h4>
+            <ul>
+              <li>
+                <i class="bi bi-telephone me-2 text-amber"></i>
+                <a href="tel:+201113144573" class="ltr">+201113144573</a>
+              </li>
+              <li>
+                <i class="bi bi-whatsapp me-2 text-amber"></i>
+                <a href="https://wa.me/201113144573" target="_blank" rel="noopener">WhatsApp</a>
+              </li>
+              <li>
+                <i class="bi bi-geo-alt me-2 text-amber"></i>
+                <a href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6" target="_blank" rel="noopener">
+                  Abbas El-Akkad Street, First District, Nasr City
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-6 col-lg-3">
-          <h4>Quick links</h4>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="services.html">Services</a>
-            </li>
-            <li>
-              <a href="articles.html">Articles & Credentials</a>
-            </li>
-            <li>
-              <a href="testimonials.html">Patient Reviews</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact Us</a>
-            </li>
-            <li>
-              <a href="appointment.html">Book an appointment</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-4">
-          <h4>Contact us</h4>
-          <ul>
-            <li>
-              <i class="bi bi-telephone me-2 text-amber"></i>
-              <a class="ltr" href="tel:+201113144573">+201113144573</a>
-            </li>
-            <li>
-              <i class="bi bi-whatsapp me-2 text-amber"></i>
-              <a href="https://wa.me/201113144573" rel="noopener" target="_blank">WhatsApp</a>
-            </li>
-            <li>
-              <i class="bi bi-geo-alt me-2 text-amber"></i>
-              <a href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6" rel="noopener" target="_blank">
-                Abbas El-Akkad Street, First District, Nasr City
-              </a>
-            </li>
-          </ul>
+        <div
+          class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2"
+        >
+          <span>© 2026 Dr. Seham Salem — All rights reserved</span>
         </div>
       </div>
-      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
-        <span>&copy; 2026 Dr. Seham Salem &mdash; All rights reserved</span>
-      </div>
+    </footer>
+    <div class="fab-stack">
+      <a class="fab map" href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6" target="_blank" rel="noopener" aria-label="Clinic location on the map">
+        <i class="bi bi-geo-alt-fill"></i>
+      </a>
+      <a class="fab wa" href="https://wa.me/201113144573" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
     </div>
-  </footer>
-  <div class="fab-stack">
-    <a aria-label="Clinic location on the map" class="fab map" href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
-      rel="noopener" target="_blank">
-      <i class="bi bi-geo-alt-fill"></i>
-    </a>
-    <a aria-label="Contact via WhatsApp" class="fab wa" href="https://wa.me/201113144573" rel="noopener"
-      target="_blank">
-      <i class="bi bi-whatsapp"></i>
-    </a>
-  </div>
-  <div class="mobile-cta">
-    <a class="btn btn-outline-primary" href="tel:+201113144573">
-      <i class="bi bi-telephone me-1"></i>
-      Call
-    </a>
-    <a class="btn btn-primary" href="appointment.html">
-      <i class="bi bi-calendar-check me-1"></i>
-      Book now
-    </a>
-  </div>
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/main.js"></script>
-</body>
-
+    <div class="mobile-cta">
+      <a class="btn btn-outline-primary" href="tel:+201113144573">
+        <i class="bi bi-telephone me-1"></i>
+        Call
+      </a>
+      <a class="btn btn-primary" href="appointment.html">
+        <i class="bi bi-calendar-check me-1"></i>
+        Book now
+      </a>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>

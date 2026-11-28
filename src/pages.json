@@ -1,0 +1,8 @@
+[
+  {"name": "index",        "changefreq": "weekly",  "priority": "1.0"},
+  {"name": "services",     "changefreq": "monthly", "priority": "0.9"},
+  {"name": "articles",     "changefreq": "weekly",  "priority": "0.8"},
+  {"name": "testimonials", "changefreq": "weekly",  "priority": "0.7"},
+  {"name": "contact",      "changefreq": "yearly",  "priority": "0.7"},
+  {"name": "appointment",  "changefreq": "yearly",  "priority": "0.9"}
+]

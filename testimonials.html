@@ -2,65 +2,22 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8" />
-    <script id="lang-redirect">
-      try {
-        if (
-          localStorage.getItem("clinic-lang") === "en" &&
-          !/[?&]lang=ar/.test(location.search)
-        ) {
-          location.replace(
-            "en/" +
-              (location.pathname.split("/").pop() || "index.html") +
-              location.search +
-              location.hash,
-          );
-        }
-      } catch (e) {}
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>آراء المرضى | عيادة د. سهام سالم للصدر</title>
-    <meta
-      name="description"
-      content="اقرأ آراء مرضى د. سهام سالم: أكثر من ٧٢٢ تقييم بدرجة 4.98 من 5."
-    />
+    <meta name="description" content="اقرأ آراء مرضى د. سهام سالم: أكثر من ٧٢٢ تقييم بدرجة 4.98 من 5." />
     <meta name="theme-color" content="#adebb3" />
     <meta name="author" content="SoftwareSolutions" />
-    <meta name="csrf-token" content />
-    <meta
-      property="og:title"
-      content="آراء المرضى | عيادة د. سهام سالم للصدر"
-    />
-    <meta
-      property="og:description"
-      content="اقرأ آراء مرضى د. سهام سالم: أكثر من ٧٢٢ تقييم بدرجة 4.98 من 5."
-    />
+    <meta property="og:title" content="آراء المرضى | عيادة د. سهام سالم للصدر" />
+    <meta property="og:description" content="اقرأ آراء مرضى د. سهام سالم: أكثر من ٧٢٢ تقييم بدرجة 4.98 من 5." />
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://drsehamsalem.com/testimonials.html" />
-    <link
-      rel="alternate"
-      hreflang="ar"
-      href="https://drsehamsalem.com/testimonials.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://drsehamsalem.com/en/testimonials.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://drsehamsalem.com/testimonials.html"
-    />
-    <meta
-      property="og:url"
-      content="https://drsehamsalem.com/testimonials.html"
-    />
+    <link rel="alternate" hreflang="ar" href="https://drsehamsalem.com/testimonials.html" />
+    <link rel="alternate" hreflang="en" href="https://drsehamsalem.com/en/testimonials.html" />
+    <link rel="alternate" hreflang="x-default" href="https://drsehamsalem.com/testimonials.html" />
+    <meta property="og:url" content="https://drsehamsalem.com/testimonials.html" />
     <meta property="og:locale" content="ar_EG" />
     <meta property="og:site_name" content="عيادة د. سهام سالم للصدر" />
-    <meta
-      property="og:image"
-      content="https://drsehamsalem.com/assets/img/doctor.webp"
-    />
+    <meta property="og:image" content="https://drsehamsalem.com/assets/img/doctor.webp" />
     <link rel="icon" href="assets/img/favicon.png" />
     <link rel="apple-touch-icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
@@ -90,16 +47,9 @@
       </div>
     </div>
     <header class="sticky-top">
-      <nav
-        class="navbar navbar-expand-lg site-nav"
-        aria-label="القائمة الرئيسية"
-      >
+      <nav class="navbar navbar-expand-lg site-nav" aria-label="القائمة الرئيسية">
         <div class="container">
-          <a
-            class="navbar-brand"
-            href="index.html"
-            aria-label="د. سهام سالم - عيادة الصدر"
-          >
+          <a class="navbar-brand" href="index.html" aria-label="د. سهام سالم - عيادة الصدر">
             <img
               src="assets/img/logo.webp"
               alt="شعار عيادة د. سهام سالم للصدر"
@@ -108,22 +58,8 @@
             />
           </a>
           <div class="lang-toggle order-lg-3" role="group" aria-label="اللغة">
-            <a
-              href="testimonials.html"
-              class="active"
-              lang="ar"
-              hreflang="ar"
-              data-lang-switch="ar"
-              aria-current="true"
-              >عربي</a
-            >
-            <a
-              href="en/testimonials.html"
-              lang="en"
-              hreflang="en"
-              data-lang-switch="en"
-              >EN</a
-            >
+            <a href="testimonials.html" class="active" aria-current="true" lang="ar" hreflang="ar" data-lang-switch="ar">عربي</a>
+            <a href="en/testimonials.html" lang="en" hreflang="en" data-lang-switch="en">EN</a>
           </div>
           <button
             class="navbar-toggler"
@@ -138,27 +74,11 @@
           </button>
           <div class="collapse navbar-collapse" id="nav">
             <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0 gap-lg-1">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">الرئيسية</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">الخدمات</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="articles.html">المقالات والشهادات</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="testimonials.html"
-                  aria-current="page"
-                >
-                  آراء المرضى
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html"> اتصل بنا </a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">الخدمات</a></li>
+              <li class="nav-item"><a class="nav-link" href="articles.html">المقالات والشهادات</a></li>
+              <li class="nav-item"><a class="nav-link active" href="testimonials.html" aria-current="page">آراء المرضى</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
             </ul>
             <a class="btn btn-primary" href="appointment.html">
               <i class="bi bi-calendar-check me-1"></i>
@@ -210,759 +130,7 @@
               </p>
             </div>
           </div>
-          <div class="masonry">
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تبارك الله ماشا</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ر</span>
-                <span lang="ar" dir="rtl">رابحة ب.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">
-                دكتوره كويسه ومريحه وسكر جداااا وشطوره اوي ربنا يحفظها يارب
-              </p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ا</span>
-                <span lang="ar" dir="rtl"> ايه ي. </span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">من افضل دكاتره ما شاء الله</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ع</span>
-                <span lang="ar" dir="rtl">عاطف م.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">دكتورة فوق ممتازة ربنا يباركلها</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ف</span>
-                <span lang="ar" dir="rtl"> فهد ا. </span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">دكتورة متميزة</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ع</span>
-                <span lang="ar" dir="rtl">عائشه ق.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">
-                دكتوره ممتازه جدا وبتراعى ربنا في شغلها...
-              </p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">خ</span>
-                <span lang="ar" dir="rtl"> خالد ع. </span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">
-                ما شاء الله دكتورة سهام ممتازة و مستمعة جيدة
-              </p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">م</span>
-                <span lang="ar" dir="rtl"> مريم ا. </span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">دكتور وخدمه كويسين</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">م</span>
-                <span lang="ar" dir="rtl">منه م.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">دكتورة مهذبة وعندها حسن إستماع</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">م</span>
-                <span lang="ar" dir="rtl"> محمد أ. </span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">قمة الذوق</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">م</span>
-                <span lang="ar" dir="rtl">معاذ ح.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">روعة اخلاق وعلم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ن</span>
-                <span lang="ar" dir="rtl">نبذة ا.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ف</span>
-                <span lang="ar" dir="rtl">فاطمة ع.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">دكتورة مستمعة جيدة وشاطرة ما شاء الله</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ن</span>
-                <span lang="ar" dir="rtl"> نورا ف. </span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">
-                ماشاء الله كانت متواضعة جدا وتعاملها رائع...
-              </p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ص</span>
-                <span lang="ar" dir="rtl">صفية ج.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">هادية و مستمعة و شاطرة ماشاء الله</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ش</span>
-                <span lang="ar" dir="rtl">شاهنده غ.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">
-                دكتورة فوق ممتازة ما شاء الله ومتفهمة...
-              </p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ي</span>
-                <span lang="ar" dir="rtl"> ياسين ع. </span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">ما شاء الله دكتوره شاطره وراقيه...</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ز</span>
-                <span lang="ar" dir="rtl">زين م.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">ممتازه و مهتمه</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ز</span>
-                <span lang="ar" dir="rtl">زينب س.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">دكتوره ممتازه</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ع</span>
-                <span lang="ar" dir="rtl">عبدالرحمن أ.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">ممتازة</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">أ</span>
-                <span lang="ar" dir="rtl">أحمد م.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">كويسة جدا ربنا يباركلها</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ر</span>
-                <span lang="ar" dir="rtl">رائدة ر.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تبارك الله ماشاء الله</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ر</span>
-                <span lang="ar" dir="rtl">رابحة ب.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">اللهم بارك دكتوره ممتازه وشاطره جدا</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ا</span>
-                <span lang="ar" dir="rtl">ايمان ف.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">اللهم بارك دكتوره ممتازه</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ا</span>
-                <span lang="ar" dir="rtl">ايمان ف.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">
-                الحقيقه زيارة العيادة والكشف مع الدكتورة سهام ممتاز للغاية
-                استقبال وكشف واستفسارات عن تاريخ المرض يشكر لذلك ويتوقف الأمر عن
-                النتائج التي يتم التوصل إليها بتشخيص المرض والعلاج في المراحل
-                القادمة ولكن حتى اللحظة الامور ممتازة
-              </p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ي</span>
-                <span lang="ar" dir="rtl">ياسمين ف.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">
-                دكتورة شاطرة قمة في الرقي والتعامل المريح والمتابعة الجيدة
-                للمريض
-              </p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">س</span>
-                <span lang="ar" dir="rtl">سارة ع.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">من احسن دكاترة فوق الممتازة مشكورين</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">س</span>
-                <span lang="ar" dir="rtl">سعد م.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">دكتوره كويسه</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">م</span>
-                <span lang="ar" dir="rtl">مشكاه ن.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">دكتورة فوق ممتازة ما شاء الله</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">س</span>
-                <span lang="ar" dir="rtl"> سحر ح. </span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">من افضل دكاترة</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ش</span>
-                <span lang="ar" dir="rtl">شيماء م.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">كلهم كويسين</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ه</span>
-                <span lang="ar" dir="rtl">هدى و.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ع</span>
-                <span lang="ar" dir="rtl">عبدالرحمن ع.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">
-                دكتورة محترمة وشخصية طبية تتعامل مع الزوار مع الاحترام والتقدير
-              </p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ا</span>
-                <span lang="ar" dir="rtl">اسامة ا.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ا</span>
-                <span lang="ar" dir="rtl">ادم ر.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ا</span>
-                <span lang="ar" dir="rtl">امل ن.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">أ</span>
-                <span lang="ar" dir="rtl">أميرة ص.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">
-                دكتورة شاطرة قمة في الرقي والتعامل المريح والمتابعة الجيدة
-                للمريض
-              </p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ا</span>
-                <span lang="ar" dir="rtl">امل ف.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ف</span>
-                <span lang="ar" dir="rtl">فيفي س.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ه</span>
-                <span lang="ar" dir="rtl">هاشم ا.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">م</span>
-                <span lang="ar" dir="rtl">مي ا.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">م</span>
-                <span lang="ar" dir="rtl">مي ع.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">م</span>
-                <span lang="ar" dir="rtl">مالك ح.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">م</span>
-                <span lang="ar" dir="rtl">محمد م.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ن</span>
-                <span lang="ar" dir="rtl">نرمين ي.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ر</span>
-                <span lang="ar" dir="rtl">ريم ح.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ر</span>
-                <span lang="ar" dir="rtl">ريم ر.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ص</span>
-                <span lang="ar" dir="rtl">صباح م.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">س</span>
-                <span lang="ar" dir="rtl">سعد ا.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">س</span>
-                <span lang="ar" dir="rtl">سميرة م.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">فوق ممتازة</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">س</span>
-                <span lang="ar" dir="rtl">سعاد م.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ي</span>
-                <span lang="ar" dir="rtl">يوسف ع.</span>
-              </div>
-            </div>
-            <div class="card-soft review-card">
-              <div class="rating-stars" aria-label="5 من 5">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p lang="ar" dir="rtl">تقييم خمس نجوم</p>
-              <div class="who">
-                <span class="avatar" aria-hidden="true" lang="ar">ي</span>
-                <span lang="ar" dir="rtl">يزن ح.</span>
-              </div>
-            </div>
-          </div>
+          <div class="masonry" id="reviewsList" data-src="assets/data/reviews.json" aria-busy="true"></div>
         </div>
       </section>
       <section class="section pt-0">
@@ -1014,66 +182,23 @@
                 loading="lazy"
               />
             </a>
-            <p class="mt-3 pe-lg-5">
-              عيادة متخصصة في أمراض الصدر والحساسية والدرن (السل)، بخبرة تزيد عن
-              ٢٠ عامًا ورعاية تهتم بالتفاصيل.
-            </p>
+            <p class="mt-3 pe-lg-5">عيادة متخصصة في أمراض الصدر والحساسية والدرن (السل)، بخبرة تزيد عن ٢٠ عامًا ورعاية تهتم بالتفاصيل.</p>
             <div class="social d-flex gap-2 mt-3">
-              <a
-                href="https://www.facebook.com/profile.php?id=61566491782382"
-                target="_blank"
-                rel="noopener"
-                aria-label="فيسبوك"
-              >
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/dr_seham_chest"
-                target="_blank"
-                rel="noopener"
-                aria-label="إنستغرام"
-              >
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a
-                href="https://www.tiktok.com/@dr.seham.chest"
-                target="_blank"
-                rel="noopener"
-                aria-label="تيك توك"
-              >
-                <i class="bi bi-tiktok"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/@drsehammostafasalemchestclinic"
-                target="_blank"
-                rel="noopener"
-                aria-label="يوتيوب"
-              >
-                <i class="bi bi-youtube"></i>
-              </a>
+              <a href="https://www.facebook.com/profile.php?id=61566491782382" target="_blank" rel="noopener" aria-label="فيسبوك"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/dr_seham_chest" target="_blank" rel="noopener" aria-label="إنستغرام"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.tiktok.com/@dr.seham.chest" target="_blank" rel="noopener" aria-label="تيك توك"><i class="bi bi-tiktok"></i></a>
+              <a href="https://www.youtube.com/@drsehammostafasalemchestclinic" target="_blank" rel="noopener" aria-label="يوتيوب"><i class="bi bi-youtube"></i></a>
             </div>
           </div>
           <div class="col-6 col-lg-3">
             <h4>روابط سريعة</h4>
             <ul>
-              <li>
-                <a href="index.html">الرئيسية</a>
-              </li>
-              <li>
-                <a href="services.html">الخدمات</a>
-              </li>
-              <li>
-                <a href="articles.html">المقالات والشهادات</a>
-              </li>
-              <li>
-                <a href="testimonials.html">آراء المرضى</a>
-              </li>
-              <li>
-                <a href="contact.html">اتصل بنا</a>
-              </li>
-              <li>
-                <a href="appointment.html">حجز موعد</a>
-              </li>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="services.html">الخدمات</a></li>
+              <li><a href="articles.html">المقالات والشهادات</a></li>
+              <li><a href="testimonials.html">آراء المرضى</a></li>
+              <li><a href="contact.html">اتصل بنا</a></li>
+              <li><a href="appointment.html">حجز موعد</a></li>
             </ul>
           </div>
           <div class="col-6 col-lg-4">
@@ -1085,20 +210,11 @@
               </li>
               <li>
                 <i class="bi bi-whatsapp me-2 text-amber"></i>
-                <a
-                  href="https://wa.me/201113144573"
-                  target="_blank"
-                  rel="noopener"
-                  >واتساب</a
-                >
+                <a href="https://wa.me/201113144573" target="_blank" rel="noopener">واتساب</a>
               </li>
               <li>
                 <i class="bi bi-geo-alt me-2 text-amber"></i>
-                <a
-                  href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
-                  target="_blank"
-                  rel="noopener"
-                >
+                <a href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6" target="_blank" rel="noopener">
                   شارع عباس العقاد، المنطقة الأولى، مدينة نصر
                 </a>
               </li>
@@ -1113,22 +229,10 @@
       </div>
     </footer>
     <div class="fab-stack">
-      <a
-        class="fab map"
-        href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6"
-        target="_blank"
-        rel="noopener"
-        aria-label="موقع العيادة على الخريطة"
-      >
+      <a class="fab map" href="https://maps.app.goo.gl/m8B1rjm5BPKrYKun6" target="_blank" rel="noopener" aria-label="موقع العيادة على الخريطة">
         <i class="bi bi-geo-alt-fill"></i>
       </a>
-      <a
-        class="fab wa"
-        href="https://wa.me/201113144573"
-        target="_blank"
-        rel="noopener"
-        aria-label="تواصل عبر واتساب"
-      >
+      <a class="fab wa" href="https://wa.me/201113144573" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
         <i class="bi bi-whatsapp"></i>
       </a>
     </div>
@@ -1144,5 +248,6 @@
     </div>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/reviews.js"></script>
   </body>
 </html>
